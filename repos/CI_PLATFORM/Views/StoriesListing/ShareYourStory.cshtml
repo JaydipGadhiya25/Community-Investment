@@ -1,0 +1,377 @@
+﻿@using CI_PLATFORM.Models
+@using System.Security.Claims
+
+@model StoriesListingViewModel.MissionList
+
+@section CSS
+{
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="~/css/ShareYourStory.css" asp-append-version="true" />
+}
+
+
+<div class=" section-1  p-0 m-0 d-flex w-100">
+    <div class=" align-items-center container ">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+
+
+            <div class="responsive-icon">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="/Images/list.png" /></button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Explore
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Themes
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Countries
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Organization
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Most Ranked
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Favourite
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Recomanded
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Random
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class=" nav-item">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Policy
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="startnavitems">
+
+
+
+                <ul class="navbar-nav mr-auto">
+                    <img class="img pe-4" src="/Images/logo.png" />
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Policy
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="endnavitems">
+
+
+
+                <div class="notificationicon d-flex align-items-center pe-5">
+                    <button class="btn" onclick="openPopUp()"><img src="~/Images/bell.png" /></button>
+
+                    <div class=" container" id="menu" style="display:none;">
+                        <div class="navbar-nav notificationnav d-flex justify-content-between align-content-center mt-3">
+                            <div class="settingicon ">
+                                <img src="/Images/settings.png" />
+                            </div>
+                            <div> <p>Notification</p></div>
+
+                            <div class="clearallbtn"> <button class="btn m-0 p-0">Clear All</button></div>
+
+
+                        </div>
+                        <div class="notificationarea d-flex justify-content-center">
+                            <div>
+                                <img src="/Images/bell-big.png" />
+                            </div>
+
+                        </div>
+                        <p>You do not have any new notifications</p>
+                    </div>
+
+
+                </div>
+
+                @{
+                    var avatarUrl = User.FindFirst(c => c.Type == ClaimTypes.Actor).Value;
+
+                }
+
+
+                <div class="profile">
+                    <img src="@avatarUrl" class="" alt="...">
+                </div>
+                <div class="namedropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item navgrp dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Context.User?.Identity?.Name
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Dashboard</a>
+                                <a class="dropdown-item" href="#">My Account</a>
+                                <a class="dropdown-item" href="#">Help Center</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="@Url.Action("Logout", "UserAuthentication")">Logout</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+    </div>
+</div>
+<hr />
+
+<div class="section-2 p-0 m-0 container-fluid w-100 ">
+    <div class="container">
+        <div class="title pt-4">
+            <span class="" style="font-size:2.5rem;">Share Your Story</span>
+        </div>
+
+
+        <form class="row g-3 pt-5 "  >
+
+            <div class="col-md-4">
+                <label class="form-label">Select Mission</label>
+                <select id="mission-select"  class="form-select" aria-label="Default select example">
+                    <option selected>Select your mission</option>
+                    @foreach (var item in @Model.missions)
+                    {
+                        <option class="selectedoptions" data-mission-id="@item.MissionId" data-user-id="@item.UserId" data-story-id="@item.StoryId" required>@item.Title</option>
+                    }
+
+
+                </select>
+            </div>
+
+
+            <div class="col-md-4">
+                <label class="form-label">My Story Title</label>
+                <input type="text" placeholder="Enter story title" class="form-control" id="input2" required>
+            </div>
+
+
+            <div class="col-md-4">
+                <label class="form-label">Date</label>
+                <input type="date" placeholder="Select date" class="form-control" id="input3" required>
+            </div>
+
+        
+
+        <div class="ckeditorContainer pt-4">
+            <label class="form-label">My Story</label>
+            <textarea cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt; &lt;strong&gt;&lt;/strong&gt;Sample   &lt;a href=&quot;https://ckeditor.com/&quot;&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
+
+        </div>
+
+
+        <div class="col-md-12 pt-4">
+            <label class="form-label">Enter Video URL</label>
+            <input type="url" class="form-control" placeholder="Enter Your Url" id="input4" required>
+        </div>
+
+
+        <div class="col-md-12 pt-4">
+            <label class="form-label">Upload your photos</label>
+            <div class="dragdrop-box d-flex justify-content-center">
+                <label type="button" class="">
+                    <input type="file" multiple onchange="showSelectedFiles(this)" class="d-none">
+                    <img src="/Images/drag-and-drop.png" />
+                </label>
+
+
+            </div>
+
+
+            <div class="col-md-12 pt-4">
+                <div class="p-3 container d-flex flex-wrap" id="selected-files"></div>
+
+            </div>
+
+
+
+
+
+
+            <div class="footerbtn d-flex justify-content-between pt-4">
+                <div class="canclebtn"><a  asp-controller="StoriesListing" asp-action="StoriesListing" class="btn">Cancel</a></div>
+                <div class="savesubmitbtns d-flex gap-3">
+                    <div class="savebtn" onsubmit="return validateForm()"><button id="savebtn" class="btn"><span style="color:orange;">Save</span></button></div>
+                    
+                   
+                            <div class="submitbtn"><button id="submitbtn" class="btn" ><span style="color:orange;">Submit</span></button></div> 
+                      
+                    
+                   
+                </div>
+
+
+
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <hr>
+    </div>
+    <div class="footer container d-flex justify-content-start align-content-center mt-5">
+        <p>Privacy policy</p>
+    </div>
+
+    @{
+        <script src="https://cdn.ckeditor.com/4.21.0/basic/ckeditor.js"></script>
+
+
+    }

@@ -1,0 +1,657 @@
+﻿body {
+    
+}
+.responsive-icon{
+    display:none;
+}
+.filterbutton{
+    display:none;
+}
+
+.endnavitems{
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+}
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.dropdown-menu option{
+    display:flex;
+    justify-content:flex-start;
+    margin:6px;
+    padding-left:20px;
+}
+.dropdown-menu span{
+    display:flex;
+    justify-content:flex-start;
+    margin:6px;
+    padding-left:20px;
+}
+.dropdown_btn .dropdown {
+    box-shadow: 0 0 0 1px rgba(0,0,0,.125);
+}
+
+.filterdropdown {
+    width: 177px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.125);
+}
+
+.section-2 {
+    height: 72px;
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.searchbar input {
+    border : none;
+    outline: none;
+    font-size: 24px;
+    padding-left: 25px;
+}
+.country-text{
+    cursor:pointer;
+}
+.dropdown_btn{
+    display:block;
+}
+.sortby {
+    border: 1px solid rgba(0,0,0,.125);
+}
+span{
+    cursor:pointer;
+}
+.section-3 {
+    height: 60px;
+} 
+.gridViewTitleBar p{
+    font-size:1.5625rem;
+}
+.btn {
+    display: flex;
+    align-items: center;
+   
+}
+.btn-close{
+    height:1px;
+}
+.selecteditemsbtn {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 25px;
+}
+
+
+.card {
+    width: 26rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-img-overlay{
+    display:flex;
+    flex-direction:column;
+    top:0px;
+    left:100%;
+    
+}
+.rating{
+    cursor:pointer;
+}
+
+.imgoverlaybtn {
+    height: 45px;
+    width: 45px;
+    background-color:black;
+    border-radius: 50%;
+    opacity:0.70
+}
+.location{
+    width:max-content;
+    opacity:0.70;
+}
+.title{
+    bottom:58%;
+    left:35%;
+}
+.titledata{
+    display:flex;
+    justify-content:center;
+    height:30px;
+    width:114px;
+    margin-top:-15px;
+    z-index:1;
+    background-color:white;
+    color:black;
+}
+.fa-star {
+    background-color: white;
+}
+.checked {
+    color: orange;
+}
+.gridView .oraganization_name {
+    justify-content:space-between;
+}
+.goalBased {
+    margin-bottom: -12px;
+    z-index: 10;
+}
+.seats-deadline {
+    position: relative;
+    z-index: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.goalBased {
+    height: max-content;
+    width: max-content;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 20px;
+}
+.gridView .apply{
+    justify-content:center;
+}
+.applybtn{
+    height:max-content;
+    width:max-content;
+    border:1px solid orange;
+    border-radius:35px;
+}
+#menu {
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    top: 0px;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 8px;
+    top: 100%;
+    margin-left: -169px;
+    z-index: 1;
+}
+
+.expandednotificationbar p{
+    font-size:25px;
+}
+.searchwraper{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    
+}
+.navbar-expand-md .navbar-collapse{
+    width:100%;
+    flex-direction:row-reverse;
+}
+
+.section-3{
+    display:none;
+}
+.listView .col{
+    width:100%;
+}
+.listView .col .card {
+    width: 100%;
+    flex-direction: row;
+    height: 80%;
+    
+}
+.listView .card-body {
+    flex-direction: row;
+    padding-left:20px;
+}
+
+.listView .mainwraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.listView .bodymain {
+    
+    width: 100%;
+}
+.listView .mainwraper{
+    height:12%;
+}
+.listView .wraper{
+     width:100%;
+ }
+ .listView .apply{
+     justify-content:flex-start;
+     padding-left:20px;
+ }
+.listView .seats-deadline{
+    border:none;
+}
+.listView .card-img-overlay {
+    
+    left:28%;
+    
+}.lisView .start-100{
+     display:none;
+ }
+
+.listView .imgoverlaybtn {
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.70
+}
+
+.listView .location {
+    width: max-content;
+    opacity: 0.70;
+}
+
+.listView .title {
+    bottom: 58%;
+    left: 35%;
+    left:116px;
+    top:236px;
+}
+.mainprogressbar{
+    width:173px;
+}
+.bgbar {
+    height: 15px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    position: absolute;
+    margin-left: 45px;
+}
+.progressbar {
+    position: relative;
+    border-radius: 10px;
+    background-color: orange;
+    height: 15px;
+    width: 70%;
+}
+.dropdown-menu{
+    width:100%;
+}
+.favorite-button {
+   
+    border-style: none;
+    background-color: transparent;
+}
+i.filled-heart {
+   
+    font-size: 2.5rem; /* Set a font size for the heart icon */
+}
+i.bi-heart{
+    color:white;
+}
+
+i.filled-heart::before {
+    content: "\2665"; /* Use a Unicode character for the filled heart symbol */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: red;
+    font-size: inherit;
+}
+
+
+  /*     Media Query  */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   body{
+       width:fit-content;
+   }
+    .section-1{
+        width:100%;
+    }
+    .responsive-icon {
+        display: block;
+    }
+   
+
+    .navbar{
+        justify-content:space-between;
+    }
+    .navbar .navgrp{
+        display:none;
+    }
+    .navbar .endnavitems{
+        display:flex;
+        flex-direction:row;
+        align-content:center;
+    }
+   
+
+    .filterbutton {
+        display: block;
+    }
+    .dropdown_btn_container {
+        display: none;
+    }
+   
+    .selectedfilter{
+        display: none;
+        
+    }
+    .mission-number{
+        margin-top:15px;
+    }
+    .missionviewoption{
+        display:none;
+    }
+    .navbar-nav{
+        height:5%;
+        width:100%;
+    }
+   
+
+    .offcanvas-top{
+        height:50%;
+    }
+   .btn{
+        width:100%;
+    }
+    .applybtn{
+        width:max-content;
+    }
+}
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .section-1 {
+        width: 100%;
+    }
+
+    .responsive-icon {
+        display: block;
+    }
+
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+        .navbar .navgrp {
+            display: none;
+        }
+
+        .navbar .endnavitems {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+
+    .responsivenavitems {
+        display: block;
+    }
+
+    .filterbutton {
+        display: block;
+    }
+    .dropdown_btn_container {
+        display: none;
+    }
+
+   
+
+    .selectedfilter {
+        display: none;
+    }
+
+    .mission-number {
+        margin-top: 15px;
+    }
+
+    .missionviewoption {
+        display: none;
+    }
+    .card{
+        width:100%;
+    }
+
+    .navbar-nav {
+        height: 5%;
+        width: 100%;
+    }
+
+     /*.navbar-nav a {
+            font-size: 25px;
+        }*/
+
+    .offcanvas-top {
+        height: 60vh;
+    }
+/*
+    .btn {
+        width: 100%;
+    }*/
+
+    .applybtn {
+        width: max-content;
+    }
+}
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+   
+    .responsive-icon {
+        display: block;
+    }
+
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+        .navbar .navgrp {
+            display: none;
+        }
+
+        .navbar .endnavitems {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+
+    .responsivenavitems {
+        display: block;
+    }
+
+    .filterbutton {
+        display: block;
+    }
+    .dropdown_btn_container{
+        display:none;
+    }
+
+  
+
+    .selectedfilter {
+        display: none;
+    }
+
+    .mission-number {
+        margin-top: 15px;
+    }
+
+    .missionviewoption {
+       display:none;
+    }
+    .missionviewoption .sortby{
+        display:none;
+    }
+
+
+        .navbar-nav {
+            height: 5%;
+            width: 100%;
+        }
+
+        /*.navbar-nav a {
+            font-size: 25px;
+        }*/
+
+    .offcanvas-top {
+        height: 60vh;
+    }
+
+  /*  .btn {
+        width: 100%;
+    }*/
+
+    .applybtn {
+        width: max-content;
+    }
+    .card {
+        width:100%;
+    }
+  
+
+}
+
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width : 1199px) {
+    .section-1 {
+        width: 100%;
+    }
+  
+    .responsive-icon {
+        display: none;
+    }
+
+
+    .navbar {
+        justify-content: space-between;
+    }
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+
+        .navbar .navgrp {
+            display: block;
+        }
+
+        .navbar .endnavitems {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+
+    
+    .filterbutton {
+        display: block;
+    }
+    .dropdown_btn_container{
+        display: none;
+    }
+    
+    .dropdown_btn {
+        display: none;
+    }
+
+    .selectedfilter {
+        display: block;
+    }
+
+    .mission-number {
+        margin-top: 15px;
+    }
+
+    .missionviewoption {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .missionviewoption .sortby {
+            display: none;
+        }
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .section-1 {
+        width: 100%;
+    }
+
+    .responsive-icon {
+        display: none;
+    }
+    .title {
+        bottom: 58%;
+        left: 35%;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+
+        .navbar .navgrp {
+            display: block;
+            
+        }
+
+        .navbar .endnavitems {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+        }
+
+
+    .filterbutton {
+        display: none;
+    }
+    .dropdown_btn_container {
+        display: block;
+    }
+  
+
+    .selectedfilter {
+        display: block;
+    }
+
+    .mission-number {
+        margin-top: 15px;
+    }
+
+    .missionviewoption {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .missionviewoption .sortby {
+            display: block;
+        }
+}

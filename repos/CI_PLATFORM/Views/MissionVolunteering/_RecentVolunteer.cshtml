@@ -1,0 +1,31 @@
+﻿@model List<CI_PLATFORM.Models.MissionVolunteeringViewModel.RecentVolunteer>
+@{
+    Layout = null;
+}
+ <div class="maincontent p-3">
+                   <div class="inforheader">
+                        <h3>Recent Volunteers</h3>
+                        <hr />
+                    </div>
+                    <div class="profileview">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            @if(Model != null && Model.Any())
+                            {
+                                 foreach(var item in Model)
+                            {
+                                <div class="col d-flex justify-content-center mt-3">
+                                    <div class="userdetailscontainer">
+                                        <img src="/Images/volunteer1.png" />
+                                        <div class="volunteername" style="white-space:nowrap;">
+                                            @item.FirstName
+                                            @item.LastName
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            }
+                           
+                        </div>
+                    </div>
+                </div>
+               

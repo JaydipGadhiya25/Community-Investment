@@ -1,0 +1,36 @@
+﻿@model List<CI_PLATFORM.Models.MissionVolunteeringViewModel.CommentModel>
+@{
+    Layout = null;
+}
+
+
+        @if (Model != null && Model.Any())
+        {
+            foreach (var comment in Model)
+            {
+                 <div class="col-12">
+                <div class="commentbox">
+                    <div class="commenterdetails d-flex">
+                    <div class="profilepic">
+                        <img class="rounded rounded-circle" src="~/Images/volunteer1.png" />
+                    </div>
+                    <div class="profilename">
+                        @*@Context.User?.Identity?.Name*@
+                        @comment.FirstName
+                        @comment.LastName
+                        <div>
+                            @comment.CreatedAt.ToString().Substring(0,16)
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="commenttext">
+                    @comment.CommentText
+                </div>
+            </div>
+            </div>
+        }
+        }
+        
+   

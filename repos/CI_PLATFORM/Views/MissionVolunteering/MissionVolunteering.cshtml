@@ -1,0 +1,1329 @@
+﻿@using System.Security.Claims
+
+
+@model MissionVolunteeringViewModel
+
+
+@section CSS
+{
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/volunteeringmission.css" asp-append-version="true" />
+
+}
+<div class=" section-1  p-0 m-0 d-flex w-100">
+    <div class=" align-items-center container ">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+
+
+            <div class="responsive-icon">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="/Images/list.png" /></button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Explore
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Themes
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Countries
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Organization
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Most Ranked
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Favourite
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Recomanded
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Random
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class=" nav-item">
+                                <a class="nav-link" href="/Mission/StoriesListing">Stories</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Policy
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="startnavitems">
+
+
+
+                <ul class="navbar-nav mr-auto">
+                    <img class="img pe-4" src="/Images/logo.png" />
+                    <li class="startnavli nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="startnavli  nav-item navgrp">
+                        <a class="nav-link" href="/StoriesListing/storiesListing">Stories</a>
+                    </li>
+                    <li class=" startnavli  nav-item navgrp">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="startnavli  nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Policy
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="endnavitems">
+
+
+
+                <div class="notificationicon d-flex align-items-center pe-5">
+                    <button class="btn" onclick="openPopUp()"><img src="~/Images/bell.png" /></button>
+
+
+                    <div class="expandednotificationbar container" id="menu">
+                        <div class="navbar-nav notificationnav d-flex justify-content-between align-content-center mt-3">
+                            <div class="settingicon">
+                                <img src="/Images/settings.png" />
+                            </div>
+                            <div> <p>Notification</p></div>
+
+                            <div class="clearallbtn"> <button class="btn">Clear All</button></div>
+
+
+                        </div>
+                        <div class="notificationarea d-flex justify-content-center">
+                            <div>
+                                <img src="/Images/bell-big.png" />
+                            </div>
+
+                        </div>
+                        <p>You do not have any new notifications</p>
+                    </div>
+
+
+                </div>
+               
+               @{
+                    var avatarUrl = User.FindFirst(c => c.Type == ClaimTypes.Actor).Value;
+
+               }
+    
+
+
+                <div class="profile">
+                   
+                        <img src="@avatarUrl" class="" alt="...">
+                    
+                    
+                </div>
+                <div class="namedropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item navgrp dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Context.User?.Identity?.Name
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Dashboard</a>
+                                <a class="dropdown-item" href="#">My Account</a>
+                                <a class="dropdown-item" href="#">Help Center</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/UserAuthentication/Logout">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+    </div>
+</div>
+
+<div class="mainbody container-fluid container mt-5">
+    <div class="row row-cols-lg-2 container m-0 p-0">
+
+        <div class="col-lg-6 g-0">
+            <div class="row h-100">
+
+
+                <div class=" slide h-100">
+
+
+                    <div class="bigimgsection m-0 p-0 h-75 g-0">
+                        <img src="~/Images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png" id="bigimg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel mt-2 h-25 d-flex align-items-center justify-content-center flex-nowrap">
+                        <div class="carousel-container gap-2 ">
+                            <div class="caro-item">
+                                <button type="button" onclick="openingbigimg()" class="active btn m-0 p-0">
+                                    <img class="smallimgcarousel" id="smallimg" src="/Images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" alt="Image 1">
+                                </button>
+
+                            </div>
+                            <div class="caro-item">
+                                <button type="button" onclick="openingbigimg2()" class="active btn m-0 p-0">
+                                    <img class="smallimgcarousel" id="smallimg2" src="/Images/img1.png" alt="Image 2">
+                                </button>
+
+
+                            </div>
+                            <div class="caro-item">
+                                <button type="button" onclick="openingbigimg3()" class="active btn m-0 p-0">
+                                    <img class="smallimgcarousel" id="smallimg3" src="/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Image 3">
+                                </button>
+
+                            </div>
+                            <div class="caro-item">
+                                <button type="button" onclick="openingbigimg4()" class="active btn m-0 p-0">
+                                    <img class="smallimgcarousel" id="smallimg4" src="/Images/img11.png" alt="Image 4">
+                                </button>
+
+                            </div>
+
+                            <div class="caro-item">
+                                <button type="button" onclick="openingbigimg5()" class="active btn m-0 p-0">
+                                    <img class="smallimgcarousel" id="smallimg5" src="/Images/image1.png" alt="Image 5">
+                                </button>
+
+                            </div>
+
+                            <div class="caro-item">
+                                <button type="button" onclick="openingbigimg6()" class="active btn m-0 p-0">
+                                    <img class="smallimgcarousel" id="smallimg6" src="/Images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png" alt="Image 6">
+                                </button>
+
+                            </div>
+
+                        </div>
+                        <button class="carousel-prev-btn"><img src="/Images/left1.png" /></button>
+                        <button class="carousel-next-btn"><img src="/Images/right-arrow2.png" /></button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="bodymain">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:38px;color:#414141;">@Model.Title</p>
+                    <p class="card-text">@Model.ShortDescription</p>
+                </div>
+                <div class="mainwraper">
+
+
+
+                    <div class="wraper">
+
+                        <div class="row  g-0 justify-content-center align-items-center">
+                            @if (@Model.MissionType == "G")
+                            {
+                                <hr class=" col-2 mb-0" />
+                                <div class="rounded rounded-pill p-2 border border-1 d-flex text-nowrap justify-content-center  align-items-center col-8">
+                                    @if (@Model.Status == "1")
+                                    {
+                                        <p class="p-0 m-0">@Model.GoalObjectiveText</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="p-0 m-0">From @Model.StartDate.ToString().Substring(0, 10) to Until @Model.EndDate.ToString().Substring(0, 10)</p>
+                                    }
+
+                                </div>
+                                <hr class=" col-2 mb-0" />
+                            }
+                            else
+                            {
+                                <hr class=" col-2 mb-0" />
+                                <div class="rounded rounded-pill p-2 border border-1 d-flex text-nowrap justify-content-center  align-items-center col-8">
+                                    <p id="duration-txt" style="margin-bottom: 0;">@Model.GoalObjectiveText</p>
+                                </div>
+                                <hr class=" col-2 mb-0" />
+
+                            }
+                        </div>
+                        <div class="row seats-deadline container d-flex align-items-center justify-content-between ">
+                            @if (Model.MissionType == "G")
+                            {
+                                <div class="col">
+                                    <div class="seatsleft d-flex gap-3 m-3  align-items-center">
+                                        <img class="rounded" src="/Images/Seats-left.png" />
+                                        <div class="leftseatsdetails">
+                                            <div>@Model.seatsLeft</div>
+                                            <div>seats left</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="goalbased deadline d-flex gap-3 m-3  align-items-center">
+
+                                        <img class="rounded" src="/Images/deadline.png" />
+                                        <div class="deadlineDetails">
+                                            <div>@Model.Deadline.ToString().Substring(0,10)</div>
+                                            <div>deadline</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            }
+                            else
+                            {
+                                <div class="col">
+                                    <div class="seatsleft d-flex gap-3 m-3 align-items-center">
+                                        <img class="rounded" src="/Images/Seats-left.png" />
+
+                                        <div>
+                                            @Model.seatsLeft
+                                            <div>seats left</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div class="timebased deadline d-flex gap-3">
+                                        <div> <img class="rounded p-1 mb-2" src="~/Images/achieved.png" /></div>
+                                        <div class="mainprogressbar">
+                                            <div class="bgbar p-0 m-0">
+                                                <div class="progressbar"></div>
+                                                <div>8000 archieved</div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                        <hr />
+
+                        @{
+                            int userId = int.Parse(User.FindFirst(ClaimTypes.Sid).Value);
+
+                        }
+                        <div class="row fav-reco_section g-0 justify-content-center align-items-center gap-3">
+                            <div class="col d-flex addtofavourite border border-3 rounded rounded-pill  align-items-center   justify-content-center">
+                                @if (Model.IsFavorite)
+                                {
+                                    <button class="favorite-button  d-flex justify-content-center" data-mission-id="@Model.MissionId" data-user-id=@userId>
+                                        <i class="bi bi-heart filled-heart"></i>
+
+                                    </button>
+                                    <span class="text" id="favouriteSpan">Remove From Favorite</span>
+
+                                }
+                                else
+                                {
+                                    <button class="favorite-button  d-flex justify-content-center" data-mission-id="@Model.MissionId" data-user-id=@userId>
+                                        <i class="bi bi-heart"></i>
+
+                                    </button>
+                                    <span class="text" id="favouriteSpan">Add to Favourite</span>
+                                }
+
+                            </div>
+                            <div class="col d-flex recomanded border border-3 rounded rounded-pill justify-content-center">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal"><img class="px-2 py-1" src="/Images/add1.png" />Recommend to a Co-Worker</button>
+                                <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Select Your Co-Worker</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    @foreach (var item in Model.users)
+                                                    {
+                                                        <div class="userlist d-flex align-items-center p-3  justify-content-between">
+                                                            <div class="profilepic d-flex align-items-center">
+                                                                <img class="rounded rounded-circle" src="/Images/volunteer1.png">
+                                                                <div class="profilename">
+                                                                    @item.FirstName
+                                                                    @item.LastName
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="recommendedbtn">
+                                                                <button type="button" id="recommendedbtn" data-email-id="@item.Email" data-mission-id="@Model.MissionId" formmethod="post" class="btn btn-primary">Recommend</button>
+                                                            </div>
+
+                                                        </div>
+                                                    }
+
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class=" g-0 rating d-flex justify-content-center align-items-center mt-3">
+
+                            <hr class="col-2" />
+                            @{
+                                var rating = @Model.Rating;
+
+
+
+
+                            }
+                            <div class="rating" id="mission-rating" data-mission-id="@Model.MissionId" data-user-id="@userId">
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <i class="fa fa-star " data-value="1"></i>
+                                <i class="fa fa-star " data-value="2"></i>
+                                <i class="fa fa-star " data-value="3"></i>
+                                <i class="fa fa-star" data-value="4"></i>
+                                <i class="fa fa-star" data-value="5"></i>
+
+                            </div>
+                            <hr class="col-2 " />
+                        </div>
+
+                        <div class="row infobox g-0 gy-0 gap-2 mt-3">
+                            <div class="col border border-1 p-2">
+                                <div class="info d-flex row justify-content-between gap-4">
+                                    <div class="infoimg">
+                                        <img src="/Images/pin1.png" />
+                                    </div>
+                                    <div class="infotitle" style="font-size:15px;">
+                                        <p>City</p>
+                                        <p>@Model.City</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col border border-1 p-2">
+                                <div class="info d-flex row justify-content-between gap-4">
+                                    <div class="infoimg">
+                                        <img src="/Images/web.png" />
+                                    </div>
+                                    <div class="infotitle" style="font-size:15px;">
+                                        <p>Theme</p>
+                                        <p>@Model.Theme</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col border border-1 p-2">
+                                <div class="info d-flex row justify-content-between gap-4">
+                                    <div class="infoimg">
+                                        <img src="/Images/calender.png" />
+                                    </div>
+                                    <div class="infotitle" style="font-size:15px;">
+                                        <p>Date</p>
+                                        <p>Ongoing Opportunity</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col border border-1 p-2">
+                                <div class="info d-flex row justify-content-between gap-4">
+                                    <div class="infoimg">
+                                        <img src="/Images/organization.png" />
+                                    </div>
+                                    <div class="infotitle" style="font-size:15px;">
+                                        <p>Oraganization</p>
+                                        <p>@Model.OrganizationName</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="apply d-flex align-items-center justify-content-center mt-4">
+                    @if (Model.isApplied)
+                    {
+                        <button class="btn btn-success disabled  mt-3 mb-3" id="applymissionbtn" data-mission-id="@Model.MissionId" data-user-id="@userId"><span>Applied</span></button>
+                    }
+                    else
+                    {
+                        <button class="btn applybtn mt-3 mb-3" id="applymissionbtn" data-mission-id="@Model.MissionId" data-user-id="@userId"><span style="color:orange;">Apply Now<img class="p-2" src="/Images/right-arrow.png" /></span></button>
+                    }
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="row row-cols-lg-2 container m-0 p-0 mt-2">
+        <div class="col-lg-8 p-3">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-1" type="button"
+                            role="tab" aria-controls="home" aria-selected="true">
+                        Mission
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab"
+                            aria-controls="profile" aria-selected="false">
+                        Organization
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3" type="button"
+                            role="tab" aria-controls="home" aria-selected="true">
+                        Sponsored
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4" type="button" role="tab"
+                            aria-controls="contact" aria-selected="false">
+                        Comments
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+                    <h1>Introduction</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br> <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h1>Challenges</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br> <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h1>Documents</h1>
+                    <div class="mission-docs d-flex flex-wrap mt-3 gap-3">
+                        @foreach (var item in Model.MissionDocuments)
+                        {
+                            <a class="btn doc-btn border" target="_blank" href="@item.DocumentPath"><img src="~/images/pdf.png" class="px-1" /><span>lorem-ipsum.pdf</span></a>
+                        }
+
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                    <h1>Introduction</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br> <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h1>Documents</h1>
+                    <div class="mission-docs d-flex flex-wrap mt-3 gap-3">
+                        @foreach (var item in Model.MissionDocuments)
+                        {
+                            <a class="btn doc-btn border" target="_blank" href="@item.DocumentPath"><img src="~/images/pdf.png" class="px-1" /><span>lorem-ipsum.pdf</span></a>
+                        }
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-3" role="tabpanel">
+                    <h1>Introduction</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br> <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h1>Documents</h1>
+                    <div class="mission-docs d-flex flex-wrap mt-3 gap-3">
+                        @foreach (var item in Model.MissionDocuments)
+                        {
+                            <a class="btn doc-btn border" target="_blank" href="@item.DocumentPath"><img src="~/images/pdf.png" class="px-1" /><span>lorem-ipsum.pdf</span></a>
+                        }
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-4" role="tabpanel">
+
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comments</label>
+                        <input type="hidden" name="missionId" value="@Model.MissionId" />
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button class="btn postcommentbtn rounded rounded-pill mt-3 p-2" data-mission-id="@Model.MissionId" data-user-id=@userId>Post Comment</button>
+
+                    <div id="dvCommentSectionContainer">
+
+                        <div class="row  commentsection overflow-auto mt-3" id="commentsection">
+
+                           
+                                @await Html.PartialAsync("_CommentSection",Model.Comment)
+                            
+
+                        </div>
+                        <div class="loadmorecommentsbtn d-flex justify-content-center"><button class="btn mt-2">Read More Comments</button></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-lg-4 p-3">
+            <div class="row informationbox border border-1 p-3">
+                <div class="inforheader">
+                    <h3>Information</h3>
+                    <hr />
+                </div>
+                <div class="skillrow ">
+                    <div class="d-flex">
+
+
+                        <div>
+                            Skill
+                        </div>
+                        <div class="infodata">
+                            @Model.SkillName
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+
+                <div class="daysrow">
+                    <div class="d-flex ">
+                        <div>
+                            Days
+                        </div>
+                        <div class="infodata">
+                            Weekend-only
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+
+                <div class="ratingrow">
+                    <div class="d-flex">
+                        <div>
+                            Rating
+                        </div>
+                        <div class="infodata d-flex w-100 justify-content-between" id="mission-avg-rating">
+                            <i class="fa fa-star" data-value="1"></i>
+                            <i class="fa fa-star" data-value="2"></i>
+                            <i class="fa fa-star" data-value="3"></i>
+                            <i class="fa fa-star" data-value="4"></i>
+                            <i class="fa fa-star" data-value="5"></i>
+                            <span>(By @Model.recentVolunteers.Count() Volunteers)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row recentvolunteerbox border border-1 mt-5 p-0">
+
+                @await Html.PartialAsync("_RecentVolunteer",Model.recentVolunteers)
+                <div class="profilechangingbutton g-0 p-0 m-0">
+
+                    <div class="col m-0 p-0">
+
+                        <div class="col m-0 p-0">
+                            <button class="btn prevbtn border border-1"><img src="/Images/left.png" /></button>
+                        </div>
+
+                    </div>
+                    <div class="col col-10 d-flex justify-content-center align-items-center  border border-1 m-0 p-0">
+                        <span class="pageno">1 of @Model.recentVolunteers.Count() Recent Volunteers</span>
+                    </div>
+
+
+                    <div class="col d-flex justify-content-end m-0 p-0">
+                        <button class="btn nextbtn border border-1"><img src="/Images/arrow.png" /></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<hr />
+
+<div class="relatedmissioncontainer container-fluid container mt-5">
+    <div class="title d-flex justify-content-center">
+        <h1>Related Mission</h1>
+    </div>
+    <div class="relatedmissioncard row row-cols-1 row-cols-lg-3 mt-5">
+
+
+
+        @foreach (var item in Model.RelatedMissions)
+        {
+            <div class="col pt-3 ">
+                <div class="card position-relative">
+                    <img src="@item.MediaPath" class="" alt="...">
+                    <div class="card-img-overlay d-flex column align-items-end  position-absolute" style="transform: translateX(-100%);">
+                        <div class="rounded rounded-pill location p-1" style="background-color:black;">
+
+                            <img src="/Images/pin.png" />
+                            <span style="color:white;">@item.City</span>
+                        </div>
+                        <div class="favourite imgoverlaybtn d-flex justify-content-center align-items-center mt-5">
+                            @if (item.IsRFavorite)
+                            {
+
+                                <button class="favorite-button" data-mission-id="@item.MissionId" data-user-id=@userId>
+                                    <i class="bi bi-heart filled-heart d-flex"></i>
+                                </button>
+
+
+                            }
+                            else
+                            {
+
+                                <button class="favorite-button" data-mission-id="@item.MissionId" data-user-id=@userId>
+                                    <i class="bi bi-heart  d-flex"></i>
+                                </button>
+                            }
+
+                        </div>
+                        <div class="recommadedbtn imgoverlaybtn d-flex justify-content-center align-items-center mt-2">
+                            <img src="/Images/user.png" />
+                        </div>
+
+
+                    </div>
+                    <div class=" title d-flex position-absolute">
+                        <div class="titledata rounded rounded-pill">
+                            @item.Theme
+                        </div>
+                    </div>
+                    <div class="bodymain">
+                        <div class="card-body">
+                            <h3 class="card-title"> @item.Title</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="mainwraper">
+
+
+                            <div class="oraganization_name container d-flex justify-content-between">
+                                <p>@item.OrganizationName</p>
+                                <div class="rating">
+                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+
+
+                            </div>
+                            <div class="wraper">
+
+                                <div class="row  g-0 justify-content-center align-items-center">
+
+                                    @if (@item.MissionType == "G")
+                                    {
+                                        <hr class=" col-2 mb-0" />
+                                        <div class="rounded rounded-pill p-2 border border-1 d-flex text-nowrap justify-content-center  align-items-center col-8">
+                                            @if (@item.Status == "1")
+                                            {
+                                                <p class="p-0 m-0">@item.GoalObjectiveText</p>
+                                            }
+                                            else
+                                            {
+                                                <p class="p-0 m-0">From @item.StartDate.ToString().Substring(0, 10) to Until @item.EndDate.ToString().Substring(0, 10)</p>
+                                            }
+
+                                        </div>
+                                        <hr class=" col-2 mb-0" />
+                                    }
+                                    else
+                                    {
+                                        <hr class=" col-2 mb-0" />
+                                        <div class="rounded rounded-pill p-2 border border-1 d-flex text-nowrap justify-content-center  align-items-center col-8">
+                                            <p id="duration-txt" style="margin-bottom: 0;">@item.GoalObjectiveText</p>
+                                        </div>
+                                        <hr class=" col-2 mb-0" />
+
+                                    }
+                                </div>
+                                <div class="seats-deadline container d-flex align-items-center">
+                                    @if (@item.MissionType == "G")
+                                    {
+                                        <div class="seatsleft d-flex gap-3 m-3  align-items-center">
+                                            <img class="rounded" src="/Images/Seats-left.png" />
+                                            <div class="leftseatsdetails">
+                                                <div>@item.SeatsLeft</div>
+                                                <div>seats left</div>
+                                            </div>
+                                        </div>
+                                        <div class="goalbased deadline d-flex gap-3 m-3  align-items-center">
+
+                                            <img class="rounded" src="/Images/deadline.png" />
+                                            <div class="deadlineDetails">
+                                                <div>@item.Deadline.ToString().Substring(0,10)</div>
+                                                <div>deadline</div>
+                                            </div>
+
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="seatsleft d-flex gap-3 m-3 align-items-center">
+                                            <img class="rounded" src="/Images/Seats-left.png" />
+
+                                            <div>
+                                                @item.SeatsLeft
+                                                <div>seats left</div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="timebased deadline d-flex gap-3">
+                                            <div> <img class="rounded p-1 mb-2" src="~/Images/achieved.png" /></div>
+                                            <div class="mainprogressbar">
+                                                <div class="bgbar p-0 m-0">
+                                                    <div class="progressbar"></div>
+                                                    <div>8000 archieved</div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    }
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="apply d-flex align-items-center justify-content-center">
+                        <button class="btn applybtn mt-3 mb-3" type="submit"><span style="color:orange;">Apply<img class="p-2" src="/Images/right-arrow.png" /></span></button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        }
+
+
+
+
+
+
+    </div>
+</div>
+<hr />
+<div class="footer container">
+    <a asp-action="#" style="text-decoration:none;color:black;">Privacy policy</a>
+</div>
+@section Scripts
+    {
+<script>
+
+                                       let menubar=document.getElementById("notificationbtn");
+                  const menu=document.getElementById('menu');
+                  console.log(menubar);
+
+                  function openPopUp(){
+
+
+                      if(menu.style.display === "none"){
+
+                           menu.style.display = "block";
+                      }
+                      else{
+                            menu.style.display = "none";
+                      }
+                  }
+
+
+
+
+
+
+
+                function openingbigimg(){
+                    var x=document.getElementById('smallimg').src;
+
+                    var myimg=document.getElementById('bigimg');
+                    myimg.src=x;
+
+
+
+                }
+                function openingbigimg2(){
+                    var x=document.getElementById('smallimg2').src;
+
+                      var myimg=document.getElementById('bigimg');
+                    myimg.src=x;
+
+                }
+                function openingbigimg3(){
+                    var x=document.getElementById('smallimg3').src;
+
+                      var myimg=document.getElementById('bigimg');
+                    myimg.src=x;
+
+                }
+                function openingbigimg4(){
+                    var x=document.getElementById('smallimg4').src;
+
+                      var myimg=document.getElementById('bigimg');
+                    myimg.src=x;
+
+                }
+                  function openingbigimg5(){
+                    var x=document.getElementById('smallimg5').src;
+
+                      var myimg=document.getElementById('bigimg');
+                    myimg.src=x;
+
+                }
+                  function openingbigimg6(){
+                    var x=document.getElementById('smallimg6').src;
+
+                      var myimg=document.getElementById('bigimg');
+                    myimg.src=x;
+
+                }
+
+
+
+             const carouselContainer = document.querySelector('.carousel-container');
+            const carouselPrevBtn = document.querySelector('.carousel-prev-btn');
+            const carouselNextBtn = document.querySelector('.carousel-next-btn');
+
+            let currentIndex = 0;
+
+            carouselPrevBtn.addEventListener('click', () => {
+              if (currentIndex > 0) {
+                currentIndex--;
+                carouselContainer.style.transform = `translateX(-${currentIndex * 20}%)`;
+              }
+            });
+
+            carouselNextBtn.addEventListener('click', () => {
+              if (currentIndex < 3) {
+                currentIndex++;
+                carouselContainer.style.transform = `translateX(-${currentIndex * 20}%)`;
+              }
+            });
+
+
+
+
+
+            // Favourite
+
+
+            $(document).on("click", ".favorite-button", function() {
+            var missionId = $(this).data('mission-id');
+                var userId = $(this).data('user-id');
+                 const heartIcon = document.querySelector('.bi-heart');
+                 var isFavorite = heartIcon.classList.contains('filled-heart')
+
+            $.ajax({
+                type: "GET",
+                url: "/MissionVolunteering/favorites",
+                data: { missionId: missionId, userId: userId },
+                success: function(data) {
+                    if (data.success) {
+                        console.log("successfully added to favorite")
+                        if(isFavorite) {
+                            $(heartIcon).removeClass("filled-heart");
+                            $("#favouriteSpan").text("Add To favourite");
+                        }
+                        else{
+                            $(heartIcon).addClass("filled-heart");
+                            $("#favouriteSpan").text("Remove from favourite");
+                        }
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error adding favorite: " + error);
+                }
+            });
+        });
+
+
+        //  For Posting comment
+
+
+
+
+
+        $(".postcommentbtn").on("click",function(){
+            var missionId = $(this).data('mission-id');
+            var userId = $(this).data('user-id');
+            var commentText = $("#exampleFormControlTextarea1").val();
+            console.log(missionId);
+             console.log(userId);
+             console.log(commentText);
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.RouteUrl("PostComment")",
+                data: { missionId: missionId, userId: userId, commentText: commentText },
+                success: function(data){
+                    $(".commentsection").html(data);
+                    console.log("Comment added successfully");
+                    $("#exampleFormControlTextarea1").val("");
+
+                },
+                error: function(xhr, status, error){
+                    console.log("Error while posting comment: " + error);
+                }
+            });
+        });
+
+         // for loading comments
+
+         var clickCount = 0;
+
+         $(".loadmorecommentsbtn").on("click",function(){
+
+              clickCount++;
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.RouteUrl("LoadMoreComments")",
+                data: { clickCount : clickCount},
+                success: function(data){
+                    $("#commentsection").append(data);
+                    console.log("Comment loaded successfully");
+
+
+                },
+                error: function(xhr, status, error){
+                    console.log("Error while posting comment: " + error);
+                }
+            });
+        });
+
+        // Rating
+
+       // load rating based on databses record
+
+       $(function () {
+
+       var rating = parseInt("@Model.Rating") ?? 0;
+
+
+
+            $('#mission-rating .fa-star').each(function () {
+                        if ($(this).data('value') <= rating) {
+                            $(this).addClass('checked');
+                        }
+                    });
+
+        });
+
+
+        // load average rating from database
+
+         $(document).ready(function () {
+
+       var avgrating = parseInt("@Model.avgRating") ?? 0;
+
+            $('#mission-avg-rating .fa-star').each(function () {
+                        if ($(this).data('value') <= avgrating) {
+                            $(this).addClass('checked');
+                        }
+                    });
+
+        });
+
+
+
+    $(document).ready(function() {
+      // Handles the hover over the stars
+
+
+      $('#mission-rating .fa-star').hover(
+        function() {
+          $(this).prevAll('.fa-star').addClass('checked');
+          $(this).addClass('checked');
+          $(this).nextAll('.fa-star').removeClass('checked');
+        },
+        function() {
+          // Don't remove the checked class when hovering out
+        }
+      );
+
+      // Fill stars based on a count
+
+
+      // Listen for clicks on the stars
+      $('#mission-rating .fa-star').click(function() {
+        $(this).prevAll('.fa-star').addClass('checked');
+        $(this).addClass('checked');
+        $(this).nextAll('.fa-star').removeClass('checked');
+        var missionId = $(this).closest('.rating').data('mission-id');
+        var userId = $(this).closest('.rating').data('user-id');
+        var rating = $(this).data('value');
+
+        console.log('Count: ' + rating);
+
+        // Make an AJAX request
+        $.ajax({
+          url: "@Url.RouteUrl("Rating")",
+          type: 'POST',
+          data: { rating: rating,  missionId: missionId, userId: userId},
+          success: function(data) {
+            console.log(data)
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log('AJAX request failed: ' + textStatus + ', ' + errorThrown);
+          }
+        });
+      });
+    });
+
+
+
+
+    // Add an event listener to the button
+    $("#recommendedbtn").on('click', function() {
+        var recobtn = this;
+        console.log(recobtn);
+
+          var emailId = $(recobtn).data('email-id');
+          var id = $(recobtn).data('mission-id');
+          
+        ShowLoading();
+         $.ajax({
+             
+          url: "@Url.Action("Recommend")",
+          type: 'POST',
+          data: { Mail : emailId , id : id},
+
+          success: function(data) {
+                $(recobtn).removeClass('btn-primary');
+                $(recobtn).addClass('btn-success');
+                $(recobtn).prop("disabled","disabled");
+                 $(recobtn).text("Sent Succesfully !!!");
+                 HideLoading();
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log('AJAX request failed: ' + textStatus + ', ' + errorThrown);
+            HideLoading();
+          }
+        });
+
+    });
+
+
+
+
+
+       // for apply in mission
+
+
+       $(document).ready(function(){
+       $("#applymissionbtn").click(function(){
+           var applybtn = this;
+           console.log(this)
+           console.log("clicked");
+           var missionId = $(applybtn).data('mission-id');
+           var userId = $(applybtn).data('user-id');
+           ShowLoading();
+
+           $.ajax({
+          url: "@Url.Action("ApplyMission","MissionVolunteering")",
+          type: 'POST',
+          data: { missionId : missionId , userId : userId },
+
+          success: function(data) {
+
+              $(applybtn).addClass('btn-success');
+              $(applybtn).removeClass('applybtn');
+
+              $(applybtn).text("Applied");
+                $(applybtn).prop("disabled",true);
+                 HideLoading();
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log('failed while applying: ' + textStatus + ', ' + errorThrown);
+
+          }
+        });
+       });
+       });
+
+       function loadVolunteers(pageNumber) {
+      // Make an AJAX request to the server
+      $.ajax({
+        type: "GET",
+        url: "@Url.Action("GetRecentVolunteer","MissionVolunteering")",
+        data: { page: pageNumber }, // Pass the page number as a parameter
+        success: function(data) {
+          $(".maincontent").empty().append(data);
+        },
+        error: function(xhr, status, error) {
+          console("error");
+        }
+      });
+    }
+
+
+       $(".nextbtn").on("click", function() {
+      var currentPageNumber = parseInt($(".pageno").text().split(" ")[0]);
+      var nextPageNumber = currentPageNumber + 1;
+      loadVolunteers(nextPageNumber);
+    });
+
+    $(".prevbtn").on("click", function() {
+      var currentPageNumber = parseInt($(".pageno").text().split(" ")[0]);
+      var prevPageNumber = currentPageNumber;
+      loadVolunteers(prevPageNumber);
+    });
+</script>
+    }

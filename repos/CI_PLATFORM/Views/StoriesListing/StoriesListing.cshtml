@@ -1,0 +1,947 @@
+﻿@using System.Security.Claims
+@using CI_PLATFORM.DataDB
+@model List<CI_PLATFORM.Models.StoriesListingViewModel.StoriesModel>
+@section CSS
+{
+<link rel="stylesheet" href="~/css/StoriesListing.css" asp-append-version="true" />
+}
+
+@{
+    var userId =  int.Parse(User.FindFirst(ClaimTypes.Sid).Value);
+}
+   
+
+<input type="hidden" id="userId" name="userId" value="@userId">
+<div class=" section-1  p-0 m-0 d-flex w-100">
+    <div class=" align-items-center container ">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+
+            <div class="responsive-icon">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="/Images/list.png" /></button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Explore
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Themes
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Countries
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Organization
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Most Ranked
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Favourite
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Recomanded
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Random
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class=" nav-item">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Policy
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="startnavitems">
+
+
+
+                <ul class="navbar-nav mr-auto">
+                    <img class="img pe-4" src="/Images/logo.png" />
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Policy
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="endnavitems">
+
+
+
+                <div class="notificationicon d-flex align-items-center pe-5">
+                    <button class="btn" onclick="openPopUp()"><img src="~/Images/bell.png" /></button>
+
+                    <div class=" container" id="menu" style="display:none;">
+                        <div class="navbar-nav notificationnav d-flex justify-content-between align-content-center mt-3">
+                            <div class="settingicon ">
+                                <img src="/Images/settings.png" />
+                            </div>
+                            <div> <p>Notification</p></div>
+
+                            <div class="clearallbtn"> <button class="btn m-0 p-0">Clear All</button></div>
+
+
+                        </div>
+                        <div class="notificationarea d-flex justify-content-center">
+                            <div>
+                                <img src="/Images/bell-big.png" />
+                            </div>
+
+                        </div>
+                        <p>You do not have any new notifications</p>
+                    </div>
+
+
+                </div>
+
+                  @{
+                    var avatarUrl = User.FindFirst(c => c.Type == ClaimTypes.Actor).Value;
+
+               }
+
+
+                <div class="profile">
+                    <img src="@avatarUrl" class="" alt="...">
+                </div>
+                <div class="namedropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item navgrp dropdown">
+                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Context.User?.Identity?.Name
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Dashboard</a>
+                                <a class="dropdown-item" href="#">My Account</a>
+                                <a class="dropdown-item" href="#">Help Center</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="@Url.Action("Logout", "UserAuthentication")">Logout</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+    </div>
+</div>
+<div class="container-fluid p-0 m-0 section-2 d-flex w-100 ">
+
+
+    <div class="d-flex align-items-center container justify-content-between">
+
+        <div class="searchwraper d-flex align-items-center">
+
+
+            <div clsas="search-icon">
+                <img src="/Images/search.png" class="" alt="...">
+            </div>
+
+
+
+            <div class="searchbar">
+                <input class="form-control" type="search" id="search-input" style="border:none;" placeholder="Search Mission" aria-label="Search">
+            </div>
+
+        </div>
+
+
+        @*<div class="dropdown filterdropdown">
+            <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Country<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Afghanistan</a>
+                <a class="dropdown-item" href="#">Albania</a>
+                <a class="dropdown-item" href="#">Algeria</a>
+                <a class="dropdown-item" href="#">Barbados</a>
+                <a class="dropdown-item" href="#">Belarus</a>
+                <a class="dropdown-item" href="#">Belgium</a>
+
+            </div>
+        </div>*@
+
+
+
+@*
+        <div class="dropdown filterdropdown">
+            <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>City<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Tirana
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Durres
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Viore
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Elbasan
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Shkoder
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Fier
+                    </label>
+                </div>
+
+            </div>
+        </div>
+*@
+
+
+@*
+        <div class="dropdown filterdropdown">
+            <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Theme<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        education
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Children
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Health
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Animals
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Nutritions
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Environment
+                    </label>
+                </div>
+            </div>
+        </div>*@
+
+@*
+        <div class="dropdown filterdropdown">
+            <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Skills<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Anthropology
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Archelogy
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Astronomy
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Computer Science
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        history
+                    </label>
+                </div>
+
+                <div class="dropdown-item form-label-check  ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Reesearch
+                    </label>
+                </div>
+            </div>
+        </div>*@
+
+@*
+        <div class="filterbutton">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img src="/Images/filter.png" /></button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="dropdown ">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Country<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Afghanistan</a>
+                            <a class="dropdown-item" href="#">Albania</a>
+                            <a class="dropdown-item" href="#">Algeria</a>
+                            <a class="dropdown-item" href="#">Barbados</a>
+                            <a class="dropdown-item" href="#">Belarus</a>
+                            <a class="dropdown-item" href="#">Belgium</a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown ">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>City<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Tirana
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Durres
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Viore
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Elbasan
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Shkoder
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Fier
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dropdown">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Theme<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    education
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Children
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Health
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Animals
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Nutritions
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Environment
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Skills<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Anthropology
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Archelogy
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Astronomy
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Computer Science
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    history
+                                </label>
+                            </div>
+
+                            <div class="dropdown-item form-label-check  ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Reesearch
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>*@
+
+
+    </div>
+
+</div>
+
+<div class="container-fluid Main-img row W-100 m-0 p-0">
+  <div class="title">
+       <p>  Lorem ipsum dolor, sit amet illo vitae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi cumque consequuntur dignissimos<br /> sunt sed tempora maiores expedita rerum quasi quas explicabo, temporibus alias, illo vitae?</p>
+       <a class="btn sharestorybtn rounded rounded-pill border border-1" href="/StoriesListing/ShareYourStory"> <span style="color:white;">share your story</span><img class="p-2" src="/Images/right-arrow2.png" /></a> 
+  </div>
+</div>
+
+
+<div class="section-3 d-flex  container-fluid m-0 p-0 w-100 align-items-center  justify-content-between">
+    <div class="container-xxl">
+         <div class="StoriesCardContainer row container row-cols-1 row-cols-md-2 row-cols-lg-3" id="StoriesCardContainer">
+
+        @await Html.PartialAsync("_StoriesCard",Model)
+ 
+    </div>
+    </div>
+ 
+</div>
+
+        @{
+            var _db = new CiPlatformContext();
+            var StoriesCount = _db.Stories.Count();
+
+            int rowsPerPage = 06;
+            int totalPages = (int)Math.Ceiling((double)StoriesCount / rowsPerPage);
+        }
+
+        <div class="pagination container-fluid d-flex justify-content-center align-content-center mt-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item m-1">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            
+                        </a>
+                    </li>
+                    @for (int i = 1; i <= totalPages; i++)
+                    {
+                                <li class="page-item m-1">
+                                    <a class="page-link" href="@Url.Action("StoriesListing", new { page = i })">@i</a>
+                                </li>
+
+                    }
+
+                    <li class="page-item  m-1">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+<div class="container-fluid">
+    <hr />
+</div>
+<div class="footer container d-flex justify-content-start align-content-center mt-5">
+                <p>Privacy policy</p>
+</div>
+
+@section Scripts{
+    <script>
+
+
+        $(document).on('click', '.closebtn', function() {
+  $(this).closest('.selectedimgcontainer').remove();
+});
+
+
+
+
+
+         let menubar=document.getElementById("notificationbtn");
+      const menu=document.getElementById('menu');
+      console.log(menubar);
+
+      function openPopUp(){
+
+
+          if(menu.style.display === "none"){
+
+               menu.style.display = "block";
+          }
+          else{
+                menu.style.display = "none";
+          }
+      }
+
+      
+
+      $(document).ready(function() {
+                var searchInput = $("#search-input");
+    var searchResults = $("#search-results");
+
+    searchInput.on("input", function() {
+                    var keywords = $(this).val();
+                    console.log(keywords)
+                    
+    searchResults.empty();
+                    if (keywords.length >= 0) {
+                      
+        $.ajax({
+            
+            type: "GET",
+            url: "@Url.RouteUrl("SearchStories")",
+            data: { keywords: keywords },
+            success: function (data) {
+                
+                if (data.trim().length > 0) {
+                    $("#StoriesCardContainer").empty().append(data);
+                    
+                } else {
+                    $("#StoriesCardContainer").empty().html("<h1>No Stories Found</h1>");
+                   
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Error: Unable to retrieve search results.");
+                console.log("Status: " + textStatus);
+                console.log("Error: " + errorThrown);
+            }
+        });
+                    }
+                });
+            });
+
+
+
+            // For opening Modal
+
+
+            $(".editbtn").on("click", function(){
+    var missionId = $(this).data("mission-id");
+    CKEDITOR.replace(`editor1-${missionId}`, {
+        height: 150,
+
+        removeButtons: ['PasteFromWord', 'About']
+    });
+    $(`#exampleModal-${missionId}`).modal("show");
+    
+    
+});
+
+
+ 
+function showSelectedFilesForModal(input) {
+    var missionId = input.getAttribute('data-mission-id');
+   
+
+
+    const selectedFiles = input.files;
+    const container = document.getElementById(`selected-files-${missionId}`);
+   
+    let filePaths = [];
+
+      
+
+    for (let i = 0; i < selectedFiles.length; i++) {
+       
+        const file = selectedFiles[i];
+        if (!file.type.startsWith('image/')) { continue } // Skip non-image files
+
+        var reader = new FileReader();
+
+        reader.onload = function () {
+            var base64String = reader.result;
+            const newImage = document.createElement("img");
+            newImage.classList.add("image-thumbnail");
+            newImage.src = base64String;
+
+            const closeButton = document.createElement("button");
+            closeButton.classList.add("closebtn", "btn");
+            closeButton.innerHTML = '<img src="/Images/cross.png"/>'
+            closeButton.onclick = function () { container.removeChild(imageContainer); }
+
+
+
+            const imageContainer = document.createElement("div");
+            imageContainer.classList.add("selectedimgcontainer");
+            
+            imageContainer.classList.add(`.image-container-${missionId}`);
+            imageContainer.appendChild(newImage);
+            imageContainer.appendChild(closeButton);
+
+            container.appendChild(imageContainer);
+            filePaths.push(newImage.src);
+            
+        }
+        reader.readAsDataURL(file);
+
+    }
+    console.log(filePaths)
+}
+
+
+            
+$(document).on('click','#SaveChangesbtn',function () {
+     var missionId = $(this).data("mission-id");
+
+  
+    
+    var title = $(`#input2-${missionId}`).val();
+    var status = "DRAFT";
+    var description = CKEDITOR.instances[`editor1-${missionId}`].getData();
+    var publishedAt = $(`#input3-${missionId}`).val();
+    var userID = $("#userId").val();
+    var filePathsSaveChanges = [];
+
+
+    let youtubeUrl  = $(`#input4-${missionId}`).val();  // get original url from user
+    console.log("youtubeUrl  :"+youtubeUrl )
+   let videoId = youtubeUrl.split('v=')[1];
+           // get only id from original url
+
+    var url =  "https://www.youtube.com/embed/"+videoId   // url that we gonna store in database with embed version
+    
+    
+    console.log("videoId : "+url)
+   
+    
+    // Get file paths from the image containers
+   
+   $(`#selected-files-${missionId}`).each(function() {
+  $(this).find('img.image-thumbnail').each(function() {
+    filePathsSaveChanges.push($(this).attr('src'));
+  });
+});
+
+
+      
+  
+    
+    $.ajax({
+        type: "POST",
+        url: "/EditAsDraft",
+       
+        data:
+        {
+            missionId : missionId,
+            title : title,
+            status : status,
+            publishedAt : publishedAt,
+            userID: userID,
+            description: description,
+            filePaths: filePathsSaveChanges,
+            url : url,
+            
+
+
+        },
+        
+        
+        success: function (data) {
+            
+            console.log("successfully stored draft");
+            $(`.SaveChangesbtn-${missionId}`).addClass('btn-success');
+             $(`.SaveChangesbtn-${missionId}`).prop("disabled", "disabled");
+             alert("successfullt edit story");
+
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log('failed while storing: ' + textStatus + ', ' + errorThrown);
+
+        }
+
+    });
+});
+     
+
+
+     // For Submit draft from edit button
+
+$(document).on('click','#submitDraft',function () {
+    console.log("clicked")
+    
+
+    
+    var missionId = $(this).data("mission-id");
+   var storyId = $(this).data("story-id");
+    var status = "PUBLISHED";
+    $.ajax({
+        type: "POST",
+        url: "/SubmitStory",
+        
+        data:
+        {
+            missionId : missionId,
+            status : status,
+            storyID: storyId,
+          
+        },
+        success: function (data) {
+
+            console.log("successfully stored draft as a published draft");
+             $("#submitDraft").addClass('btn-success');
+             $("#submitDraft").prop("disabled", "disabled");
+             alert("successfullt edit story");
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log('failed while storing: ' + textStatus + ', ' + errorThrown);
+
+        }
+
+    });
+});
+
+
+    </script>
+       
+}

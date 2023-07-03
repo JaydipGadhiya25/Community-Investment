@@ -1,0 +1,1019 @@
+﻿@using CI_PLATFORM.DataDB
+@using System.Security.Claims
+@model MissionListingViewModel
+
+
+
+@section CSS{
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/missionlisting.css" asp-append-version="true" />
+ }
+
+
+<div class=" section-1  p-0 m-0 d-flex w-100">
+    <div class=" align-items-center container ">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+
+
+            <div class="responsive-icon">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="/Images/list.png" /></button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Explore
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Themes
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Countries
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Organization
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Most Ranked
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Favourite
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Recomanded
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Random
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class=" nav-item">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Policy
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="startnavitems">
+
+
+
+                <ul class="navbar-nav mr-auto">
+                    <img class="img pe-4" src="/Images/logo.png" />
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="/StoriesListing/StoriesListing">Stories</a>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Policy
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="endnavitems">
+
+
+
+                <div class="notificationicon d-flex align-items-center pe-5">
+                    <button class="btn" onclick="openPopUp()"><img src="~/Images/bell.png" /></button>
+
+                    <div class=" container" id="menu" style="display:none;">
+                        <div class="navbar-nav notificationnav d-flex justify-content-between align-content-center mt-3">
+                            <div class="settingicon">
+                                <img src="/Images/settings.png" />
+                            </div>
+                            <div> <p>Notification</p></div>
+
+                            <div class="clearallbtn"> <button class="btn m-0 p-0">Clear All</button></div>
+
+
+                        </div>
+                        <div class="notificationarea d-flex justify-content-center">
+                            <div>
+                                <img src="/Images/bell-big.png" />
+                            </div>
+
+                        </div>
+                        <p>You do not have any new notifications</p>
+                    </div>
+
+
+                </div>
+
+                  @{
+                    var avatarUrl = User.FindFirst(c => c.Type == ClaimTypes.Actor).Value;
+
+                 }
+                <div class="profile">
+                    <img src="@avatarUrl" class="" alt="...">
+                </div>
+                <div class="namedropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item navgrp dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Context.User?.Identity?.Name
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Dashboard</a>
+                                <a class="dropdown-item" href="#">My Account</a>
+                                <a class="dropdown-item" href="#">Help Center</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="@Url.Action("Logout", "UserAuthentication")">Logout</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+    </div>
+</div>
+
+
+<div class="container-fluid p-0 m-0 section-2 d-flex w-100 ">
+
+
+    <div class="d-flex align-items-center container justify-content-between ">
+
+        <div class="searchwraper">
+
+
+            <div clsas="search-icon">
+                <img src="/Images/search.png" class="" alt="...">
+            </div>
+
+
+
+            <div class="searchbar">
+                <input formmethod="get" asp-controller="MissionController" type="search" id="search-input" class="search-results" style="border:none;" placeholder="Search Mission" aria-label="Search">
+            </div>
+
+        </div>
+
+
+        <div class="dropdown_btn_container h-100">
+            <div class="d-flex align-items-center gap-0 h-100">
+                <div class="dropdown filterdropdown d-flex align-items-center h-100">
+                    <button type="button" class="btn d-flex justify-content-between align-items-center w-100" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Country</span><img class="p-3" src="~/Images/drop-down.png" /></button>
+                    <div class="dropdown-menu w-100 mt-2" aria-labelledby="dropdownMenuButton">
+                        <input type="hidden" id="selectedCountry" value="" />
+                        @foreach (var item in Model.country)
+                        {
+                                    <div class="d-flex align-items-center px-2">
+
+                                        <span class="country-text p-1">@item.Name</span>
+                                    </div>
+                        }
+
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="dropdown filterdropdown d-flex align-items-center h-100">
+                    <button type="button" class="btn  d-flex justify-content-between align-items-center w-100" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>City</span><img class="p-3" src="~/Images/drop-down.png" /></button>
+                    <div class="dropdown-menu w-100 mt-2 " aria-labelledby="dropdownMenuButton" id="cityList">
+
+                        @await Html.PartialAsync("_CityDropdown",Model.city)
+
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="dropdown filterdropdown d-flex align-items-center h-100">
+                    <button type="button" class="btn  d-flex justify-content-between align-items-center w-100" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Theme</span><img class="p-3" src="~/Images/drop-down.png" /></button>
+                    <div class="dropdown-menu w-100 mt-2 " aria-labelledby="dropdownMenuButton">
+                        @foreach (var item in Model.theme)
+                        {
+                                    <div class="d-flex align-items-center px-2">
+                                        <input class="form-check-input themecheckbox" type="checkbox" value="" id="flexCheckDefault">
+                                        <option value="">@item.Title</option>
+                                    </div>
+
+                        }
+                    </div>
+                </div>
+
+
+                <div class="dropdown filterdropdown d-flex align-items-centeratio h-100">
+                    <button type="button" class="btn  d-flex justify-content-between align-items-center w-100" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Skills</span><img class="p-3" src="~/Images/drop-down.png" /></button>
+                    <div class="dropdown-menu w-100 mt-2 " aria-labelledby="dropdownMenuButton">
+
+                        @foreach (var item in Model.skill)
+                        {
+                                    <div class="d-flex align-items-center px-2">
+                                        <input class="form-check-input skillcheckbox" type="checkbox" value="@item.SkillId" id="flexCheckDefault">
+                                        <span>@item.SkillName</span>
+                                    </div>
+
+                        }
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="filterbutton">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img src="/Images/filter.png" /></button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="dropdown ">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Country<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <input type="hidden" id="selectedCountry" value="" />
+                            @foreach (var item in Model.country)
+                            {
+                                        <span class="country-text" value="">@item.Name</span>
+                            }
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown ">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>City<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item form-label-check">
+                                @await Html.PartialAsync("_CityDropdown",Model.city)
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dropdown">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Theme<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item form-label-check  ">
+                                @foreach (var item in Model.theme)
+                                {
+                                            <div class="d-flex align-items-center">
+                                                <input class="form-check-input themecheckbox" type="checkbox" value="" id="flexCheckDefault">
+                                                <option value="">@item.Title</option>
+                                            </div>
+
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Skills<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item form-label-check  ">
+                                @foreach (var item in Model.skill)
+                                {
+                                            <div class="d-flex align-items-center">
+                                                <input class="form-check-input skillcheckbox" type="checkbox" value="" id="flexCheckDefault">
+                                                <span>@item.SkillName</span>
+                                            </div>
+
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<div class="selectedfilter">
+
+    <div class="section-3  container-fluid p-0 m-0  d-flex w-100 ">
+        <div class="d-flex align-items-center container" id="selectedfilter">
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container-fluid p-0 m-0 d-flex w-100 gridViewTitleBar">
+    <div class="d-flex align-items-center container justify-content-between">
+
+        <div class="mission-number">
+            <p>Explore <strong> @Model.mission.Count() Missions</strong></p>
+        </div>
+
+
+
+        <div class="missionviewoption dropdown">
+            <div class="sortby">
+
+
+                <button type="button" class="btn" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>sort by<img class="p-3" src="~/Images/drop-down.png" /></span></button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <span class="dropdown-item" id="newestButton">Newest</span>
+                    <span class="dropdown-item" id="oldestButton">Oldest</span>
+                    <span class="dropdown-item" id="lowestavailableButton">Lowest available seats</span>
+                    <span class="dropdown-item" id="highestavailableButton">Highest available seats</span>
+                    <span class="dropdown-item" href="#">sort by my favourite</span>
+                    <span class="dropdown-item" id="sortbydeadlineButton">Sort by deadline</span>
+                </div>
+            </div>
+            <button class="btn" onclick="showGridView()"><img src="~/Images/grid.png" /></button>
+            <button class="btn" onclick="showListView()"><img src="~/Images/list.png" /></button>
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+<div class="container-fluid p-0 m-0 d-flex w-100 gridtemplete align-items-center  justify-content-between">
+
+    <div class="gridview container">
+        <div class="row row-cols-1  row-cols-lg-2 row-cols-xl-3 gridView" id="gridViewCard">
+
+            @await Html.PartialAsync("_MissionListing",Model.MissionList)
+
+        </div>
+
+
+        @{
+            var _db = new CiPlatformContext();
+            var missionCount = _db.Missions.Count();
+
+            int rowsPerPage = 03;
+            int totalPages = (int)Math.Ceiling((double)missionCount / rowsPerPage);
+        }
+
+        <div class="pagination container-fluid d-flex justify-content-center align-content-center mt-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item m-1">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    @for (int i = 1; i <= totalPages; i++)
+                    {
+                                <li class="page-item m-1">
+                                    <a class="page-link" href="@Url.Action("MissionListing", new { page = i })">@i</a>
+                                </li>
+                    }
+
+                    <li class="page-item  m-1">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <hr />
+</div>
+<div class="footer container d-flex justify-content-start align-content-center mt-5">
+    <p>Privacy policy</p>
+</div>
+
+
+ @section Scripts
+            {
+<script>
+    
+
+
+    const checkboxElements = document.querySelectorAll('.form-check-input');
+    const selectedFilterContainer = document.getElementById('selectedfilter');
+
+    checkboxElements.forEach(function (checkboxElement) {
+        checkboxElement.addEventListener('click', function () {
+            if (this.checked) {
+                const selecteditems = this.nextElementSibling.innerHTML;
+                const selectedButton = document.createElement('button');
+                selectedButton.classList.add('btn', 'selecteditemsbtn');
+                selectedButton.innerHTML = selecteditems;
+
+                // Create close button for the selected country button
+                const closeButton = document.createElement('button');
+                closeButton.classList.add('btn-close');
+                closeButton.addEventListener('click', function () {
+                    // Remove the corresponding country button when the close button is clicked
+                    selectedFilterContainer.removeChild(selectedButton);
+                    checkboxElement.checked = false; // Uncheck the corresponding checkbox
+
+
+                });
+                selectedButton.appendChild(closeButton); // Add the close button to the country button
+
+                selectedFilterContainer.appendChild(selectedButton);
+            }
+        });
+    });
+
+
+    // code for searching functionality
+
+    $(document).ready(function() {
+                var searchInput = $("#search-input");
+    var searchResults = $("#search-results");
+
+    searchInput.on("input", function() {
+                    var keywords = $(this).val();
+    searchResults.empty();
+                    if (keywords.length >= 0) {
+        $.ajax({
+            type: "GET",
+            url: "/Mission/SearchMissions",
+            data: { keywords: keywords },
+            success: function (data) {
+                if (data.trim().length > 0) {
+                    $("#gridViewCard").empty().append(data);
+                } else {
+                    var result = $("#gridViewCard").load("/Mission/_NoMissionFound");
+                    searchResults.append(result);
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Error: Unable to retrieve search results.");
+                console.log("Status: " + textStatus);
+                console.log("Error: " + errorThrown);
+            }
+        });
+                    }
+                });
+            });
+
+
+    // code for showing city as per selected country
+    $('.country-text').on('click', function() {
+        $('#selectedCountry').val($(this).text());
+    const country = $(this).text();
+    $.ajax({
+        type: "GET",
+    url: "/Mission/SearchCity",
+    data: {Country: country },
+    success: function(data) {
+        console.log(data)
+                    if (data.length > 0) {
+        $("#cityList").empty().append(data);
+                    } else {
+                        var result =$("#gridViewCard").load("/Mission/_NoMissionFound");
+    searchResults.append(result);
+                    }
+                },
+    error: function(jqXHR, textStatus, errorThrown) {
+        console.log("Error: Unable to retrieve search results.");
+    console.log("Status: " + textStatus);
+    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+
+
+    // code for filtering mission
+
+    // Country
+
+
+    $('.country-text').on('click', function() {
+              const country = $(this).text();
+    $.ajax({
+        type: "GET",
+    url: "/Mission/FilterCountry",
+    data: {Country: country},
+    success: function(data) {
+        console.log(typeof data)
+
+                    if (data.trim().length > 0) {
+        $("#gridViewCard").empty().append(data);
+                    } else {
+
+        $("#gridViewCard").load("/Mission/_NoMissionFound", function (response, status, xhr) {
+            if (status == "error") {
+                console.log("Error loading partial view: " + xhr.status + " " + xhr.statusText);
+            }
+        });
+
+                    }
+                },
+    error: function(jqXHR, textStatus, errorThrown) {
+        console.log("Error: Unable to retrieve search results.");
+    console.log("Status: " + textStatus);
+    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+
+
+
+    // City
+
+
+
+    var xhr;
+    $(document).on('change', '.citycheckbox', function() {
+            if (this.checked) {
+
+           const cityName = this.nextElementSibling.innerHTML;
+    xhr = $.ajax({
+        type: "GET",
+    url: "/Mission/FilterCity",
+    data: {City : cityName },
+    success: function(data) {
+        console.log(data)
+                    if (data.trim().length> 0) {
+        previousResults = $("#gridViewCard").html();
+    $("#gridViewCard").empty().append(data);
+
+
+
+                    } else {
+        $("#gridViewCard").load("/Mission/_NoMissionFound");
+
+                    }
+                },
+    error: function(jqXHR, textStatus, errorThrown) {
+        console.log("Error: Unable to retrieve search results.");
+    console.log("Status: " + textStatus);
+    console.log("Error: " + errorThrown);
+                }
+            });
+            }
+    else{
+        xhr.abort();
+    $("#gridViewCard").html(previousResults);
+
+            }
+            });
+
+
+
+
+    // Theme
+
+
+    $(document).ready(function() {
+              var previousResult = "";
+    $('.themecheckbox').on('change', function() {
+
+            if (this.checked) {
+
+           const themeName = this.nextElementSibling.innerHTML;
+    const country = $("#selectedCountry").val();
+
+
+
+    xhr = $.ajax({
+        type: "GET",
+    url: "/Mission/FilterTheme",
+    data: {Theme : themeName,Country:country},
+    success: function(data) {
+        console.log(data)
+                    if (data.trim().length > 0) {
+        previousResults = $("#gridViewCard").html();
+    $("#gridViewCard").empty().append(previousResult + data);
+    previousResult += data;
+                    } else {
+        $("#gridViewCard").load("/Mission/_NoMissionFound");
+
+                    }
+                },
+    error: function(jqXHR, textStatus, errorThrown) {
+        console.log("Error: Unable to retrieve search results.");
+    console.log("Status: " + textStatus);
+    console.log("Error: " + errorThrown);
+                }
+            });
+            }
+    else{
+        xhr.abort();
+    $("#gridViewCard").html(previousResults);
+
+            }
+            });
+        });
+
+    // Skill
+
+
+
+    $(document).ready(function() {
+        $('.skillcheckbox').on('change', function () {
+            if (this.checked) {
+
+                const skillId = this.value;
+                const country = $("#selectedCountry").val();
+                xhr = $.ajax({
+                    type: "GET",
+                    url: "/Mission/FilterSkill",
+                    data: { skillId: skillId, Country: country },
+                    success: function (data) {
+                        console.log(data)
+                        if (data.trim().length > 0) {
+                            previousResults = $("#gridViewCard").html();
+                            $("#gridViewCard").empty().append(data);
+                        } else {
+                            $("#gridViewCard").load("/Mission/_NoMissionFound");
+
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log("Error: Unable to retrieve search results.");
+                        console.log("Status: " + textStatus);
+                        console.log("Error: " + errorThrown);
+                    }
+                });
+            }
+            else {
+                xhr.abort();
+                $("#gridViewCard").html(previousResults);
+
+            }
+        });
+        });
+
+    $(document).ready(function() {
+        // Attach an event listener to the "Newest" button
+        $('#newestButton').click(function () {
+            // Make an AJAX call to the server-side code to retrieve the sorted data
+            $.ajax({
+                type: "GET",
+                url: "/Mission/SortByCreatedTime",
+                data: { sortBy: "newest" },
+                success: function (data) {
+                    // Clear the existing card data
+
+                    $("#gridViewCard").empty().append(data);
+                    console.log(data)
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error: Unable to retrieve sorted data.");
+                    console.log("Status: " + textStatus);
+                    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        // Attach an event listener to the "oldest" button
+        $('#oldestButton').click(function () {
+            // Make an AJAX call to the server-side code to retrieve the sorted data
+            $.ajax({
+                type: "GET",
+                url: "/Mission/SortByOldestTime",
+                data: { sortBy: "oldest" },
+                success: function (data) {
+                    // Clear the existing card data
+
+                    $("#gridViewCard").empty().append(data);
+                    console.log(data)
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error: Unable to retrieve sorted data.");
+                    console.log("Status: " + textStatus);
+                    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        // Attach an event listener to the "highestavailableseats" button
+        $('#highestavailableButton').click(function () {
+            // Make an AJAX call to the server-side code to retrieve the sorted data
+            $.ajax({
+                type: "GET",
+                url: "/Mission/SortByHighestSeats",
+
+                success: function (data) {
+                    // Clear the existing card data
+
+                    $("#gridViewCard").empty().append(data);
+
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error: Unable to retrieve sorted data.");
+                    console.log("Status: " + textStatus);
+                    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        // Attach an event listener to the "lowestavailableseats" button
+        $('#lowestavailableButton').click(function () {
+            // Make an AJAX call to the server-side code to retrieve the sorted data
+            $.ajax({
+                type: "GET",
+                url: "/Mission/SortByLowestSeats",
+
+                success: function (data) {
+                    // Clear the existing card data
+
+                    $("#gridViewCard").empty().append(data);
+
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error: Unable to retrieve sorted data.");
+                    console.log("Status: " + textStatus);
+                    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        // Attach an event listener to the "lowestavailableseats" button
+        $('#sortbydeadlineButton').click(function () {
+            // Make an AJAX call to the server-side code to retrieve the sorted data
+            $.ajax({
+                type: "GET",
+                url: "/Mission/SortByDeadline",
+
+                success: function (data) {
+                    // Clear the existing card data
+
+                    $("#gridViewCard").empty().append(data);
+                    console.log(data)
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error: Unable to retrieve sorted data.");
+                    console.log("Status: " + textStatus);
+                    console.log("Error: " + errorThrown);
+                }
+            });
+        });
+    });
+
+    //  code for opening and closing notification bar
+
+
+    let menubar=document.getElementById("notificationbtn");
+    const menu=document.getElementById('menu');
+    console.log(menubar);
+
+    function openPopUp(){
+
+
+                if(menu.style.display === "none"){
+
+        menu.style.display = "block";
+                }
+    else{
+        menu.style.display = "none";
+                }
+            }
+
+
+    // Add to Favourite
+
+
+    $(".favorite-button").on("click", function() {
+            var favBtn=this;
+    var missionId = $(favBtn).data('mission-id');
+    var userId = $(favBtn).data('user-id');
+    var isFavorite = $(favBtn).find("i")[0].classList.contains('filled-heart');
+
+    $.ajax({
+        type: "GET",
+    url: "/Mission/AddToFavorites",
+    data: {missionId: missionId, userId: userId },
+
+    success: function(data) {
+                if (data.success) {
+        console.log("successfully added to favorite")
+                    if(isFavorite) {
+        $(favBtn).find("i").removeClass("filled-heart");
+
+                    }
+    else{
+        $(favBtn).find("i").addClass("filled-heart");
+
+                    }
+                }
+            },
+    error: function(xhr, status, error) {
+        console.error("Error adding favorite: " + error);
+            }
+        });
+    });
+
+
+
+    //  code for changing view between grid and list card
+
+
+    let view=document.getElementById("gridview");
+    function showListView(){
+
+        let rows = document.querySelectorAll(".gridView");
+
+
+                           if(rows.length>0){
+        rows.forEach(e => {
+            e.classList.remove("gridView");
+            e.classList.add("listView");
+        })
+    }
+                       }
+
+    function showGridView(){
+
+        let rows=document.querySelectorAll(".listView");
+
+
+                           if(rows.length>0){
+        rows.forEach(e => {
+            e.classList.remove("listView");
+            e.classList.add("gridView");
+        })
+    }
+
+
+
+                       }
+
+
+
+
+
+
+    </Script>
+            }
+
+
+
+
+
+
+
+
+

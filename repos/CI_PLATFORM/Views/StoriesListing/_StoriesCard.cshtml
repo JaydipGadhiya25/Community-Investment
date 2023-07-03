@@ -1,0 +1,163 @@
+﻿@using System.Security.Claims
+@using System.Text
+@model List<StoriesListingViewModel.StoriesModel>
+
+
+@foreach (var item in Model)
+{
+
+    string id = @item.StoryId.ToString();
+    string Encrypted_Storyid = Convert.ToBase64String(Encoding.UTF8.GetBytes(id.ToString()));
+
+
+
+
+    <div class="col pt-4">
+        <div class="card">
+            <div class="img-container">
+                <img src="@item.MediaPath" class="card-img-top" alt="...">
+                <div class="img-overlay">
+                    <a asp-controller="StoriesListing" asp-route-id="@Encrypted_Storyid" asp-action="StoriesDetail" class="btn overlay-text p-2">
+                        View Details
+                        <img class="p-2" src="/Images/right-arrow2.png">
+                    </a>
+                </div>
+            </div>
+            <div class=" titlepill d-flex position-absolute">
+                <div class="titledata rounded rounded-pill align-items-center">
+                    @item.ThemeTitle
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@item.Title</h5>
+                <p class="card-text">@item.Description</p>
+                <div class="profiledetail d-flex justify-content-between align-items-center">
+                    <div>
+                         <img class="profiledetailimg" src="@item.Avatar" />
+                    <span class="px-3">
+                        @item.FirstName
+                        @item.LastName
+                    </span>
+                    </div>
+                   
+
+                    @if (item.isDraft)
+                    {
+                        <button type="button" class="editbtn btn" data-mission-id="@item.missionId">Edit</button>
+
+
+                        <!-- Modal -->
+
+
+                        <div class="modal fade" id="exampleModal-@item.missionId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="row g-3 pt-5">
+
+                                            <div class="col-md-12">
+                                                <label class="form-label">Select Mission</label>
+                                                <select class="form-select" aria-label="Default select example">
+
+                                                    <option data-mission-id="@item.missionId" selected>@item.missionName</option>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <label class="form-label">My Story Title</label>
+                                                <input type="text" placeholder="Enter story title" class="form-control" value="@item.Title" id="input2-@item.missionId" required>
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <label class="form-label">Date</label>
+                                                <input type="date" placeholder="Select date" value="@item.publishedAt" class="form-control" id="input3-@item.missionId" required>
+                                            </div>
+
+                                        </form>
+                                        <div class="col-md-12 pt-4">
+                                            <div class="ckeditorContainer">
+                                                <label class="form-label">My Story</label>
+                                                <textarea value="" cols="80" id="editor1-@item.missionId" name="editor1" rows="10">@item.Description</textarea>
+
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="col-md-12 pt-4">
+                                            <label class="form-label">Enter Video URL</label>
+                                            <input type="url" class="form-control"  placeholder="Enter Your Url" id="input4-@item.missionId">
+                                        </div>
+
+                                        <div class="col-md-12 pt-4">
+                                            <label class="form-label">Upload your photos</label>
+                                            <div class="dragdrop-box d-flex justify-content-center">
+                                                <label type="button" class="">
+                                                    <input type="file" data-mission-id="@item.missionId" id="fileInput-@item.missionId" name="fileInput-@item.missionId" multiple onchange="showSelectedFilesForModal(this)" class="d-none">
+                                                    <img id="drag-drop-img" src="/Images/drag-and-drop.png" />
+                                                </label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-12 pt-4">
+                                            <div class="selectedimg p-3 container d-flex flex-wrap" data-mission-id="@item.missionId" id="selected-files-@item.missionId">
+                                                @foreach (var i in item.path )
+                                                {
+                                                    if (i.Contains("/jpg") || i.Contains("/jpeg") || i.Contains("/png") || i.Contains("/gif"))
+                                                    {
+                                                        <div class="selectedimgcontainer image-container-@item.missionId">
+                                                            <img class="image-thumbnail" src="@i" />
+                                                            <button class="closebtn btn"><img src="/Images/cross.png" /></button>
+                                                        </div>
+
+                                                    }
+
+                                                }
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <div class="footerbtn d-flex justify-content-between pt-4 w-100">
+                                            <div class="canclebtn"><button type="button" class="btn " data-bs-dismiss="modal">Close</button></div>
+                                            <div class="savesubmitbtns d-flex gap-3">
+                                                <div class="savebtn" onsubmit="return validateForm()"><button type="button" class="btn SaveChangesbtn SaveChangesbtn-@item.missionId" data-mission-id="@item.missionId" id="SaveChangesbtn"><span style="color:orange;">Save</span></button></div>
+
+
+                                                <div class="submitbtn"><button type="button" id="submitDraft" class="btn" data-mission-id="@item.missionId" data-user-id="@item.userId" data-story-id="@item.StoryId"><span style="color:orange; " >Submit</span></button></div>
+
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@{
+    <script src="https://cdn.ckeditor.com/4.21.0/basic/ckeditor.js"></script>
+
+
+}

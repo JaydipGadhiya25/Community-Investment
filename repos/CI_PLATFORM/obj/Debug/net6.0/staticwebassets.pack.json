@@ -1,0 +1,737 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CI_PLATFORM.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CI_PLATFORM.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\404-Page-image.png",
+      "PackagePath": "staticwebassets\\Images\\404-Page-image.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Already-volunteered.png",
+      "PackagePath": "staticwebassets\\Images\\Already-volunteered.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Animal-welfare-&-save-birds-campaign-1.png",
+      "PackagePath": "staticwebassets\\Images\\Animal-welfare-&-save-birds-campaign-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Animal-welfare-&-save-birds-campaign.png",
+      "PackagePath": "staticwebassets\\Images\\Animal-welfare-&-save-birds-campaign.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png",
+      "PackagePath": "staticwebassets\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png",
+      "PackagePath": "staticwebassets\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png",
+      "PackagePath": "staticwebassets\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png",
+      "PackagePath": "staticwebassets\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png",
+      "PackagePath": "staticwebassets\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png",
+      "PackagePath": "staticwebassets\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png",
+      "PackagePath": "staticwebassets\\Images\\CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png",
+      "PackagePath": "staticwebassets\\Images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png",
+      "PackagePath": "staticwebassets\\Images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png",
+      "PackagePath": "staticwebassets\\Images\\Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-1.png",
+      "PackagePath": "staticwebassets\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-2.png",
+      "PackagePath": "staticwebassets\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-3.png",
+      "PackagePath": "staticwebassets\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-4.png",
+      "PackagePath": "staticwebassets\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-5.png",
+      "PackagePath": "staticwebassets\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-login.png",
+      "PackagePath": "staticwebassets\\Images\\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Grow-Trees-On-the-path-to-environment-sustainability.png",
+      "PackagePath": "staticwebassets\\Images\\Grow-Trees-On-the-path-to-environment-sustainability.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Nourish-the-Children-in--African-country-1.png",
+      "PackagePath": "staticwebassets\\Images\\Nourish-the-Children-in--African-country-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Nourish-the-Children-in--African-country.png",
+      "PackagePath": "staticwebassets\\Images\\Nourish-the-Children-in--African-country.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Open-Volunteering-Requests.png",
+      "PackagePath": "staticwebassets\\Images\\Open-Volunteering-Requests.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Plantation-and-Afforestation-programme-1.png",
+      "PackagePath": "staticwebassets\\Images\\Plantation-and-Afforestation-programme-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Plantation-and-Afforestation-programme.png",
+      "PackagePath": "staticwebassets\\Images\\Plantation-and-Afforestation-programme.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Seats-left.png",
+      "PackagePath": "staticwebassets\\Images\\Seats-left.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Volunteering-Rank.png",
+      "PackagePath": "staticwebassets\\Images\\Volunteering-Rank.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\Voted-Missions.png",
+      "PackagePath": "staticwebassets\\Images\\Voted-Missions.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\achieved.png",
+      "PackagePath": "staticwebassets\\Images\\achieved.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\add.png",
+      "PackagePath": "staticwebassets\\Images\\add.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\add1.png",
+      "PackagePath": "staticwebassets\\Images\\add1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\arrow.png",
+      "PackagePath": "staticwebassets\\Images\\arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\bell-big.png",
+      "PackagePath": "staticwebassets\\Images\\bell-big.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\bell.png",
+      "PackagePath": "staticwebassets\\Images\\bell.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\bin.png",
+      "PackagePath": "staticwebassets\\Images\\bin.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\calender.png",
+      "PackagePath": "staticwebassets\\Images\\calender.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\cancel.png",
+      "PackagePath": "staticwebassets\\Images\\cancel.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\cancel1.png",
+      "PackagePath": "staticwebassets\\Images\\cancel1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\checked.png",
+      "PackagePath": "staticwebassets\\Images\\checked.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\cross.png",
+      "PackagePath": "staticwebassets\\Images\\cross.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\deadline.png",
+      "PackagePath": "staticwebassets\\Images\\deadline.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\doc.png",
+      "PackagePath": "staticwebassets\\Images\\doc.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\down.png",
+      "PackagePath": "staticwebassets\\Images\\down.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\drag-and-drop.png",
+      "PackagePath": "staticwebassets\\Images\\drag-and-drop.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\drop-down.png",
+      "PackagePath": "staticwebassets\\Images\\drop-down.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\eye.png",
+      "PackagePath": "staticwebassets\\Images\\eye.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\facebook.png",
+      "PackagePath": "staticwebassets\\Images\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\filter.png",
+      "PackagePath": "staticwebassets\\Images\\filter.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\gift.png",
+      "PackagePath": "staticwebassets\\Images\\gift.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\graph.png",
+      "PackagePath": "staticwebassets\\Images\\graph.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\grid.png",
+      "PackagePath": "staticwebassets\\Images\\grid.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\heart.png",
+      "PackagePath": "staticwebassets\\Images\\heart.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\heart1.png",
+      "PackagePath": "staticwebassets\\Images\\heart1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\hours.png",
+      "PackagePath": "staticwebassets\\Images\\hours.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\image.png",
+      "PackagePath": "staticwebassets\\Images\\image.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\image1.png",
+      "PackagePath": "staticwebassets\\Images\\image1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\image2.png",
+      "PackagePath": "staticwebassets\\Images\\image2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\img.png",
+      "PackagePath": "staticwebassets\\Images\\img.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\img1.png",
+      "PackagePath": "staticwebassets\\Images\\img1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\img11.png",
+      "PackagePath": "staticwebassets\\Images\\img11.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\img2.png",
+      "PackagePath": "staticwebassets\\Images\\img2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\img22.png",
+      "PackagePath": "staticwebassets\\Images\\img22.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\img3.png",
+      "PackagePath": "staticwebassets\\Images\\img3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\img33.png",
+      "PackagePath": "staticwebassets\\Images\\img33.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\info.png",
+      "PackagePath": "staticwebassets\\Images\\info.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\left.png",
+      "PackagePath": "staticwebassets\\Images\\left.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\left1.png",
+      "PackagePath": "staticwebassets\\Images\\left1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\linkedin.png",
+      "PackagePath": "staticwebassets\\Images\\linkedin.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\list.png",
+      "PackagePath": "staticwebassets\\Images\\list.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\mission.png",
+      "PackagePath": "staticwebassets\\Images\\mission.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\my-story.png",
+      "PackagePath": "staticwebassets\\Images\\my-story.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\new-message.png",
+      "PackagePath": "staticwebassets\\Images\\new-message.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\next.png",
+      "PackagePath": "staticwebassets\\Images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\organization.png",
+      "PackagePath": "staticwebassets\\Images\\organization.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\pdf.png",
+      "PackagePath": "staticwebassets\\Images\\pdf.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\pin.png",
+      "PackagePath": "staticwebassets\\Images\\pin.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\pin1.png",
+      "PackagePath": "staticwebassets\\Images\\pin1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\previous.png",
+      "PackagePath": "staticwebassets\\Images\\previous.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\right-arrow.png",
+      "PackagePath": "staticwebassets\\Images\\right-arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\right-arrow1.png",
+      "PackagePath": "staticwebassets\\Images\\right-arrow1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\right-arrow2.png",
+      "PackagePath": "staticwebassets\\Images\\right-arrow2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\right-white.png",
+      "PackagePath": "staticwebassets\\Images\\right-white.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\right.png",
+      "PackagePath": "staticwebassets\\Images\\right.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\search.png",
+      "PackagePath": "staticwebassets\\Images\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\selected-star.png",
+      "PackagePath": "staticwebassets\\Images\\selected-star.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\settings.png",
+      "PackagePath": "staticwebassets\\Images\\settings.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\star-empty.png",
+      "PackagePath": "staticwebassets\\Images\\star-empty.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\star.png",
+      "PackagePath": "staticwebassets\\Images\\star.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\twitter.png",
+      "PackagePath": "staticwebassets\\Images\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\up.png",
+      "PackagePath": "staticwebassets\\Images\\up.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\user-img-large.png",
+      "PackagePath": "staticwebassets\\Images\\user-img-large.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\user-img.png",
+      "PackagePath": "staticwebassets\\Images\\user-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\user.png",
+      "PackagePath": "staticwebassets\\Images\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\user1.png",
+      "PackagePath": "staticwebassets\\Images\\user1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer1.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer2.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer3.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer4.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer4.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer5.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer5.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer6.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer6.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer7.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer7.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer8.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer8.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\volunteer9.png",
+      "PackagePath": "staticwebassets\\Images\\volunteer9.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\web.png",
+      "PackagePath": "staticwebassets\\Images\\web.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\Images\\xlsx.png",
+      "PackagePath": "staticwebassets\\Images\\xlsx.png"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\.editorconfig",
+      "PackagePath": "staticwebassets\\css\\.editorconfig"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\Forgotpassword.css",
+      "PackagePath": "staticwebassets\\css\\Forgotpassword.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\ShareYourStory.css",
+      "PackagePath": "staticwebassets\\css\\ShareYourStory.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\StoriesDetail.css",
+      "PackagePath": "staticwebassets\\css\\StoriesDetail.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\StoriesListing.css",
+      "PackagePath": "staticwebassets\\css\\StoriesListing.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\missionlisting.css",
+      "PackagePath": "staticwebassets\\css\\missionlisting.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\registration.css",
+      "PackagePath": "staticwebassets\\css\\registration.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\resetpassword.css",
+      "PackagePath": "staticwebassets\\css\\resetpassword.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\css\\volunteeringmission.css",
+      "PackagePath": "staticwebassets\\css\\volunteeringmission.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\documents\\Training Plan-2022-23-Part5-ModuleWiseIntegration-.net.pdf",
+      "PackagePath": "staticwebassets\\documents\\Training Plan-2022-23-Part5-ModuleWiseIntegration-.net.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jay Gadhiya\\Downloads\\CI-Platform-master (1)\\CI-Platform-master\\MVC\\repos\\CI_PLATFORM\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CI_PLATFORM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CI_PLATFORM.props",
+      "PackagePath": "build\\CI_PLATFORM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CI_PLATFORM.props",
+      "PackagePath": "buildMultiTargeting\\CI_PLATFORM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CI_PLATFORM.props",
+      "PackagePath": "buildTransitive\\CI_PLATFORM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

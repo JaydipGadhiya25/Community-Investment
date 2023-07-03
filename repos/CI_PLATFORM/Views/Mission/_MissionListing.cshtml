@@ -1,0 +1,169 @@
+﻿@using CI_PLATFORM.DataDB
+@using System.Security.Claims
+@using System.Text
+ @model List<MissionModel>
+  
+
+ @foreach (var obj in Model)
+            {
+                       
+                <div class="col pt-3 ">
+                    <div class="card position-relative">
+                        <img src="@obj.MediaPath"  class="img-fluid" alt="" />
+                        <div class="card-img-overlay d-flex column align-items-end  position-absolute" style="transform: translateX(-100%);">
+                            <div class="rounded rounded-pill location p-1" style="background-color:black;">
+
+                                <img src="/Images/pin.png" />
+                                <span style="color:white;">@obj.City</span>
+                            </div>
+                            <div class="favourite imgoverlaybtn d-flex justify-content-center align-items-center mt-5">
+                                  @{
+                                         int userId = int.Parse(User.FindFirst(ClaimTypes.Sid).Value);
+                                    }
+                    @if (obj.IsFavorite)
+                    {
+                      
+                        <button class="favorite-button"  data-mission-id="@obj.MissionId" data-user-id=@userId>
+                             <i class="bi bi-heart filled-heart d-flex"></i>
+                        </button>
+                       
+
+                    }
+                    else
+                    {
+                      
+                         <button class="favorite-button"  data-mission-id="@obj.MissionId" data-user-id=@userId>
+                             <i class="bi bi-heart d-flex"></i>
+                        </button>
+                    }
+
+
+                            </div>
+                            <div class="recommadedbtn imgoverlaybtn d-flex justify-content-center align-items-center mt-2">
+                                <img src="/Images/user.png" />
+                            </div>
+
+
+                        </div>
+                        <div class=" title d-flex position-absolute">
+                            <div class="titledata rounded rounded-pill align-items-center">
+                                @obj.Theme
+                            </div>
+                        </div>
+                        <div class="bodymain">
+                            <div class="card-body">
+                                <h3 class="card-title">@obj.Title</h3>
+                                <p class="card-text">@obj.ShortDescription</p>
+                            </div>
+                            <div class="mainwraper">
+
+
+                                <div class="oraganization_name container d-flex">
+                                    <p>@obj.OrganizationName</p>
+                                  
+                                    <div class="rating"  data-mission-id="@obj.MissionId" data-user-id=@userId>
+                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+
+                                </div>
+                                <div class="wraper">
+
+                                    <div class="row  g-0 justify-content-center align-items-center">
+                                        @if (@obj.MissionType == "G")
+                                        {
+                                            <hr class=" col-2 mb-0" />
+                                            <div class="rounded rounded-pill p-2 border border-1 d-flex text-nowrap justify-content-center  align-items-center col-8">
+                                                @if (@obj.Status == "1")
+                                                {
+                                                       <p class="p-0 m-0">@obj.GoalObjectiveText</p>
+                                                }
+                                                else
+                                                {
+                                                    <p class="p-0 m-0">From @obj.StartDate.ToString().Substring(0, 10) to Until @obj.EndDate.ToString().Substring(0, 10)</p>
+                                                }
+
+                                            </div>
+                                            <hr class=" col-2 mb-0" />
+                                        }
+                                        else
+                                        {
+                                            <hr class=" col-2 mb-0" />
+                                            <div class="rounded rounded-pill p-2 border border-1 d-flex text-nowrap justify-content-center  align-items-center col-8">
+                                                <p id="duration-txt" style="margin-bottom: 0;">@obj.GoalObjectiveText</p>
+                                            </div>
+                                            <hr class=" col-2 mb-0" />
+
+                                        }
+
+                                    </div>
+                                    <div class="seats-deadline container d-flex align-items-center justify-content-between ">
+                                        @if (obj.MissionType == "G")
+                                        {
+                                            <div class="seatsleft d-flex gap-3 m-3  align-items-center">
+                                                <img class="rounded" src="/Images/Seats-left.png" />
+                                                <div class="leftseatsdetails">
+                                                    <div>@obj.SeatsLeft</div>
+                                                    <div>seats left</div>
+                                                </div>
+                                            </div>
+                                            <div class="goalbased deadline d-flex gap-3 m-3  align-items-center">
+
+                                                <img class="rounded" src="/Images/deadline.png" />
+                                                <div class="deadlineDetails">
+                                                    <div>@obj.Deadline.ToString().Substring(0,10)</div>
+                                                    <div>deadline</div>
+                                                </div>
+
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="seatsleft d-flex gap-3 m-3 align-items-center">
+                                                <img class="rounded" src="/Images/Seats-left.png" />
+
+                                                <div>
+                                                    @obj.SeatsLeft
+                                                    <div>seats left</div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="timebased deadline d-flex gap-3">
+                                                <div> <img class="rounded p-1 mb-2" src="~/Images/achieved.png" /></div>
+                                                <div class="mainprogressbar">
+                                                    <div class="bgbar p-0 m-0">
+                                                        <div class="progressbar"></div>
+                                                        <div>8000 archieved</div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                @{
+                    string id = @obj.MissionId.ToString();
+                    string Encrypted_id = Convert.ToBase64String(Encoding.UTF8.GetBytes(id.ToString()));
+                            }
+
+                            <div class="apply d-flex align-items-center">
+                                <a class="btn applybtn mt-3 mb-3" type="submit" asp-action="MissionVolunteering" asp-controller="MissionVolunteering" asp-route-id = "@Encrypted_id"><span style="color:orange;">Apply<img class="p-2" src="/Images/right-arrow.png" /></span></a>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            }

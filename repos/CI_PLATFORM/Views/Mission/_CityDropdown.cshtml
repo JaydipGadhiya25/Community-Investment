@@ -1,0 +1,10 @@
+﻿@using CI_PLATFORM.DataDB
+@model List<City>
+
+@foreach (var city in Model)
+{
+    <div class="d-flex align-items-center px-2">
+        <input class="form-check-input citycheckbox" type="checkbox" value="" id="flexCheckDefault">
+        <option value="">@city.Name</option>
+    </div>
+}

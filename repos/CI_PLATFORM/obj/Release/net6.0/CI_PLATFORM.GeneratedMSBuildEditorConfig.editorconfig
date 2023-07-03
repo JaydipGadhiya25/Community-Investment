@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CI_PLATFORM
+build_property.RootNamespace = CI_PLATFORM
+build_property.ProjectDir = C:\Users\Jay Gadhiya\Downloads\CI-Platform-master (1)\CI-Platform-master\MVC\repos\CI_PLATFORM\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Jay Gadhiya\Downloads\CI-Platform-master (1)\CI-Platform-master\MVC\repos\CI_PLATFORM
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/MissionVolunteering/MissionVolunteering.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblZvbHVudGVlcmluZ1xNaXNzaW9uVm9sdW50ZWVyaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/MissionVolunteering/_CommentSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblZvbHVudGVlcmluZ1xfQ29tbWVudFNlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/MissionVolunteering/_RecentVolunteer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblZvbHVudGVlcmluZ1xfUmVjZW50Vm9sdW50ZWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Mission/MissionListing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxNaXNzaW9uTGlzdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Mission/_CityDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxfQ2l0eURyb3Bkb3duLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Mission/_MissionListing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxfTWlzc2lvbkxpc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Mission/_NoMissionFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxfTm9NaXNzaW9uRm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Shared/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/StoriesListing/ShareYourStory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rvcmllc0xpc3RpbmdcU2hhcmVZb3VyU3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/StoriesListing/StoriesDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rvcmllc0xpc3RpbmdcU3Rvcmllc0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/StoriesListing/StoriesListing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rvcmllc0xpc3RpbmdcU3Rvcmllc0xpc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/StoriesListing/_StoriesCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rvcmllc0xpc3RpbmdcX1N0b3JpZXNDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/UserAuthentication/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXEZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/UserAuthentication/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXGxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/UserAuthentication/registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXHJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/UserAuthentication/resetpassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXHJlc2V0cGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jay Gadhiya/Downloads/CI-Platform-master (1)/CI-Platform-master/MVC/repos/CI_PLATFORM/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3808a9hgkj

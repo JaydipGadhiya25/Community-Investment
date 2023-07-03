@@ -1,0 +1,558 @@
+﻿@using System.Security.Claims
+@using System.Text
+
+@model StoriesListingViewModel.StoriesDetail
+
+
+@section CSS
+{
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="~/css/StoriesDetail.css" asp-append-version="true" />
+}
+
+
+
+<div class=" section-1  p-0 m-0 d-flex w-100 ">
+    <div class=" align-items-center container ">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+
+
+            <div class="responsive-icon">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="/Images/list.png" /></button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Explore
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Themes
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Countries
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Organization
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Most Ranked
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Favourite
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Recomanded
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Random
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class=" nav-item">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Policy
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="startnavitems">
+
+
+
+                <ul class="navbar-nav mr-auto">
+                    <img class="img pe-4" src="/Images/logo.png" />
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Explore
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item navgrp">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item navgrp dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Policy
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="endnavitems">
+
+
+
+                <div class="notificationicon d-flex align-items-center pe-5">
+                    <button class="btn" onclick="openPopUp()"><img src="~/Images/bell.png" /></button>
+
+                    <div class="expandednotificationbar container" id="menu" style="display:none;">
+                        <div class="navbar-nav notificationnav d-flex justify-content-between align-content-center mt-3">
+                            <div class="settingicon ">
+                                <img src="/Images/settings.png" />
+                            </div>
+                            <div> <p>Notification</p></div>
+
+                            <div class="clearallbtn"> <button class="btn m-0 p-0">Clear All</button></div>
+
+
+                        </div>
+                        <div class="notificationarea d-flex justify-content-center">
+                            <div>
+                                <img src="/Images/bell-big.png" />
+                            </div>
+
+                        </div>
+                        <p>You do not have any new notifications</p>
+                    </div>
+
+
+                </div>
+
+                @{
+                    var avatarUrl = User.FindFirst(c => c.Type == ClaimTypes.Actor).Value;
+
+                }
+
+
+                <div class="profile">
+                    <img src="@avatarUrl" class="" alt="...">
+                </div>
+                <div class="namedropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item navgrp dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Context.User?.Identity?.Name
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Dashboard</a>
+                                <a class="dropdown-item" href="#">My Account</a>
+                                <a class="dropdown-item" href="#">Help Center</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="@Url.Action("Logout", "UserAuthentication")">Logout</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+    </div>
+</div>
+<hr />
+
+<div class=" section-2 pt-4 p-0 m-0 w-100 ">
+    <div class="container">
+        <div class="row row-cols-lg-2 g-2 container m-0 p-0">
+
+            <div class="col-lg-6 g-0">
+                <div class="row h-100">
+
+
+                    <div class=" slide h-100">
+
+
+                        <div class="bigimgsection m-0 p-0 h-75 g-0">
+                            <img src="/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" id="bigimg" class="d-block" alt="...">
+
+                            <iframe id="bigvideo" class="d-none" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel mt-2 h-25 d-flex align-items-center justify-content-center flex-nowrap">
+                            <div class="carousel-container gap-2 ">
+
+                                @{
+                                    int counter = 1;
+                                    @foreach (var photos in Model.path)
+                                    {
+                                        <div class="caro-item">
+                                            <button type="button" id="btnforopeningimg-@counter" class="active btn m-0 p-0" data-index="@counter">
+                                            @if(photos.Value != ".url"){
+                                                    <img class="smallimgcarousel" data-originalurl = "@photos.Text" id="smallimg-@counter" src="@photos.Text"  alt="">
+                                                }
+                                                else
+                                                {
+                                                    string thumbUrl="https://img.youtube.com/vi/{0}/maxresdefault.jpg";
+                                                    string videoId = photos.Text.Substring(photos.Text.LastIndexOf("/")+1);
+                                                    <img class="smallimgcarousel" id="smallimg-@counter" data-originalurl = "@photos.Text" src="@string.Format(thumbUrl,videoId)"  alt="" />
+                                                }
+                                            </button>
+                                        </div>
+
+                                        counter++;
+                                    }
+                                }
+
+
+                            </div>
+                            <button class="carousel-prev-btn"><img src="/Images/left1.png" /></button>
+                            <button class="carousel-next-btn"><img src="/Images/right-arrow2.png" /></button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 g-0">
+                <div class="storydetailsContainer">
+                    <div class="profile-pic"><img class="rounded-circle" src="@Model.Avatar" /></div>
+                    <div class="name-view d-flex justify-content-between mt-2">
+                        <span>
+                            @Model.FirstName
+                            @Model.LastName
+                        </span>
+                        <span class="d-flex justify-content-center align-items-center"><img src="/Images/eye.png" />@Model.StoryView Views</span>
+                    </div>
+                    <div class="StoryDescriptionArea mt-4">
+                        @Model.Description
+
+                    </div>
+
+
+                    <div class="row mt-4">
+                        <div class="col-lg-8 d-flex recomanded border border-3 rounded rounded-pill justify-content-center">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal"><img class="px-2 py-1" src="/Images/add1.png" />Recommend to a Co-Worker</button>
+                            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Select Your Co-Worker</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div>
+                                                @foreach (var item in Model.users)
+                                                {
+                                                    <div class="userlist d-flex align-items-center p-3  justify-content-between">
+                                                        <div class="profilepic d-flex align-items-center">
+                                                            <img class="rounded rounded-circle" src="@item.Avatar">
+                                                            <div class="profilename">
+                                                                @item.FirstName
+                                                                @item.LastName
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="recommendedbtn">
+                                                            <button type="button" id="recommendedbtn" data-email-id="@item.Email" data-story-id="@Model.StoryId" formmethod="post" class="btn btn-primary">Recommend</button>
+                                                        </div>
+
+                                                    </div>
+                                                }
+
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+
+                            @{
+                                string id = @Model.MissionId.ToString();
+                                string Encrypted_id = Convert.ToBase64String(Encoding.UTF8.GetBytes(id.ToString()));
+                            }
+                            <a class="btn applybtn" asp-action="MissionVolunteering" asp-controller="MissionVolunteering" asp-route-id="@Encrypted_id"><span style="color:orange;">Open Mission<img class="p-2" src="/Images/right-arrow.png"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="section-3 container mt-5">
+    <div class="missionTitle"><span>@Model.MissionName</span></div>
+    <hr />
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magn<br />is dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementu<br />m semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean im<br />perdiet. <br />Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam qu<br />am nunc, blandit vel, luctus
+
+    <ul>
+        <li>
+            vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequa
+        </li>
+    </ul>
+    <ul>
+        <li>
+            vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequa
+        </li>
+    </ul>
+    <ul>
+        <li>
+            vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequa
+        </li>
+    </ul>
+    <ul>
+        <li>
+            vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequa
+        </li>
+    </ul>
+
+
+    pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Eti<br />am sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+
+
+</div>
+
+
+
+<div class="container-fluid">
+    <hr>
+</div>
+<div class="footer container d-flex justify-content-start align-content-center mt-4">
+    <p>Privacy policy</p>
+</div>
+
+@section Scripts{
+<script>
+
+
+
+
+
+                                           let menubar=document.getElementById("notificationbtn");
+                      const menu=document.getElementById('menu');
+                      console.log(menubar);
+
+                      function openPopUp(){
+
+
+                          if(menu.style.display === "none"){
+
+                               menu.style.display = "block";
+                          }
+                          else{
+                                menu.style.display = "none";
+                          }
+                      }
+
+                      $(document).ready(function() {
+      $("button[id^='btnforopeningimg-']").click(function() {
+
+          
+         
+        var index = $(this).data("index");
+        var src = $("#smallimg-" + index).data("originalurl");
+        console.log(src)
+      
+        if (src.includes(".com/embed/")) {
+      // hide the big image and show the video iframe
+      $("#bigimg").addClass("d-none");
+      $("#bigvideo").removeClass("d-none");
+      $("#bigvideo").attr("src",  src );
+    } else {
+      // hide the video iframe and show the big image
+      $("#bigimg").removeClass("d-none");
+      $("#bigvideo").addClass("d-none");
+      $("#bigimg").attr("src", src);
+    }
+
+      });
+    });
+
+
+
+
+
+
+                 const carouselContainer = document.querySelector('.carousel-container');
+                const carouselPrevBtn = document.querySelector('.carousel-prev-btn');
+                const carouselNextBtn = document.querySelector('.carousel-next-btn');
+
+                let currentIndex = 0;
+
+                carouselPrevBtn.addEventListener('click', () => {
+                  if (currentIndex > 0) {
+                    currentIndex--;
+                    carouselContainer.style.transform = `translateX(-${currentIndex * 20}%)`;
+                  }
+                });
+
+                carouselNextBtn.addEventListener('click', () => {
+                  if (currentIndex < 3) {
+                    currentIndex++;
+                    carouselContainer.style.transform = `translateX(-${currentIndex * 20}%)`;
+                  }
+                });
+
+
+
+                 $(".recommendedbtn button").on('click', function() {
+            var recobtn = this;
+            console.log(recobtn);
+
+              var emailId = $(recobtn).data('email-id');
+              var id = $(recobtn).data('story-id');
+              console.log(id)
+            ShowLoading();
+             $.ajax({
+              url: "@Url.RouteUrl("RecommendStory")",
+              type: 'POST',
+              data: { Mail : emailId , id : id},
+
+              success: function(data) {
+                    $(recobtn).removeClass('btn-primary');
+                    $(recobtn).addClass('btn-success');
+                    $(recobtn).prop("disabled","disabled");
+                     $(recobtn).text("Sent Succesfully !!!");
+                     HideLoading();
+              },
+              error: function(jqXHR, textStatus, errorThrown) {
+                console.log('AJAX request failed: ' + textStatus + ', ' + errorThrown);
+                HideLoading();
+              }
+            });
+
+        });
+
+
+</script>
+
+    }
+
+

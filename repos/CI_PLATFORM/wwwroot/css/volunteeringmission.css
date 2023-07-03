@@ -1,0 +1,437 @@
+﻿body {
+}
+.mainbody{
+    margin-bottom:130px;
+}
+.responsive-icon {
+    display: none;
+}
+
+.filterbutton {
+    display: none;
+}
+
+.navbar-expand-lg {
+    justify-content: space-between;
+}
+
+.endnavitems {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.expandednotificationbar {
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    display: none;
+    top: 0px;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 8px;
+}
+
+
+#menu {
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    top: 0px;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 8px;
+    top: 100%;
+    margin-left: -169px;
+    z-index: 1;
+}
+
+.expandednotificationbar p {
+    font-size: 25px;
+}
+
+.seats-deadline {
+    position: relative;
+    z-index: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.mainprogressbar {
+    width: 173px;
+}
+
+.bgbar {
+    height: 15px;
+    width: 190px;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    position: absolute;
+    margin-left: 264px;
+}
+
+.progressbar {
+    position: relative;
+    border-radius: 10px;
+    background-color: orange;
+    height: 15px;
+    width: 70%;
+}
+
+.applybtn {
+    height: max-content;
+    width: max-content;
+    border: 1px solid orange;
+    border-radius: 35px;
+}
+.userdetailscontainer {
+    width:70px;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    color: #505050;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid black;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    color: #505050;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid black;
+    color: black;
+    font-weight: 500;
+}
+.nav-link {
+    color: #ADADAD;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 14px 18px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ADADAD;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.tab-pane {
+    font-size: 15px;
+    line-height: 24px;
+    color: #3E3E3E;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ADADAD;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.tab-pane {
+    font-size: 15px;
+    line-height: 24px;
+    color: #3E3E3E;
+}
+.postcommentbtn{
+    color:orange;
+    border-color:orange;
+}
+.infodata{
+    padding-left:40px;
+}
+.profileview img{
+   
+    border-radius:50%;
+    height:60px;
+    width:60px;
+}
+.relatedmissioncontainer{
+    margin-bottom:100px;
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 100%;
+}
+
+.imgoverlaybtn {
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.70
+}
+
+.location {
+    width: max-content;
+    opacity: 0.70;
+}
+
+.title {
+    bottom: 58%;
+    left: 35%;
+}
+
+.titledata {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 114px;
+    margin-top: -15px;
+    z-index: 1;
+    background-color: white;
+    color: black;
+}
+
+.commentsection {
+    background-color: #EDF2F3;
+    max-height:538px;
+   
+}
+.commentbox {
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.profilechangingbutton{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.profilepic img {
+    height: 50px;
+    width: 50px;
+}
+.profilename{
+    padding-left:20px;
+}
+.commenttext{
+    margin-top:20px;
+}
+
+
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carous-item {
+    flex: 0 0 calc(100% / 5);
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.carous-item img {
+       
+  object-fit: cover;
+    }
+.bigimg img{
+    height:100%;
+    width:100%;
+}
+
+.carousel-prev-btn,
+.carousel-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem;
+    border: none;
+    background: black;
+    font-size: 2rem;
+    cursor: pointer;
+    opacity:0.60;
+    height:100%;
+
+}
+
+.carousel-prev-btn {
+    left: 0;
+    height:145px;
+}
+
+.carousel-next-btn {
+    right: 0;
+    height: 145px;
+}
+.smallimgcarousel button {
+    height: 100px;
+    width: 200px;
+}
+img.smallimgcarousel {
+   height:145px;
+    object-fit:cover;
+}
+.favorite-button {
+    height: 50px; /* Set a fixed height for the button */
+   padding:0px;
+   margin:0px;
+   border-style:none;
+   background-color:transparent;
+}
+
+    .favorite-button i.filled-heart {
+        position: relative;
+        font-size: 2.5rem; /* Set a font size for the heart icon */
+    }
+
+    .favorite-button i.bi-heart {
+        position: relative;
+        font-size: 2.5rem; /* Set a font size for the heart icon */
+        margin-right: 35px; /* Add some margin to separate the heart icon from the text */
+    }
+
+        .favorite-button i.bi-heart::before {
+            content: "\2661"; /* Use a Unicode character for the empty heart symbol */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: inherit;
+        }
+
+    .favorite-button i.filled-heart::before {
+        content: "\2665"; /* Use a Unicode character for the filled heart symbol */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: red;
+        font-size: inherit;
+    }
+
+.succ-reco-btn{
+    background-color:green;
+}
+
+.checked{
+    color:orange;
+}
+.rating{
+    
+    cursor:pointer;
+}
+i.fa.fa-star{
+    font-size:30px;
+}
+.btnafterapply{
+    background-color:green;
+    color:white;
+}
+.loadmorecommentsbtn button {
+    background-color: lightslategrey;
+}
+
+
+
+
+
+
+
+/*     Media Query  */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .startnavli{
+        display:none;
+    }
+    .responsive-icon{
+        display:block;
+    }
+}
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .startnavli {
+        display: none;
+    }
+    .responsive-icon {
+        display: block;
+    }
+}
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .startnavli {
+        display: none;
+    }
+    .responsive-icon {
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width : 1199px) {
+    .startnavli {
+        display: block;
+    }
+    .responsive-icon {
+        display: none;
+    }
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .startnavli {
+        display: block;
+    }
+    .responsive-icon {
+        display: none;
+    }
+}
